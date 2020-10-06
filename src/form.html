@@ -1,0 +1,2209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Славяно-Арийский Календарь">
+	<meta name="keywords" content="Славяно-Арийский,Календарь">
+	<meta name="author" content="Omel">
+	<meta name="google-site-verification" content="MtuPBsUEIqmQx5clzjtczN1L6IduEkSjkG_Ahcx31Ds" />	<meta name="yandex-verification" content="6e36bddd56005bc8" />	<link rel="shortcut icon" href="http://energodar.net/templates/favicon.ico" />
+	<link href="http://energodar.net/templates/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="http://energodar.net/templates/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet" />	<link href="http://energodar.net/templates/bootstrap/css/netvbootstrap.css" rel="stylesheet" />	<link href="http://energodar.net/templates/lightbox2/css/lightbox.css" rel="stylesheet" />	<link href="http://energodar.net/plugin/tinymce/plugins/codesample/css/prism.css" rel="stylesheet" />	<script src="http://energodar.net/plugin/tinymce/plugins/codesample/css/prism.js"></script>
+
+	<script>function addBookmark() {alert('Нажмите Ctrl-D чтобы добавить страницу в закладки');}</script>
+	<title>Славяно-Арийский Календарь</title></head><body onload=KrugoLet()"><div class="navbar navbar-default navbar-static-top" role="navigation"><!-- navbar-inverse  -->
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="Меню">
+				<span class="sr-only">Навигация</span>
+				<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="http://energodar.net">Энергодар</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class=""><a href="http://energodar.net" title="Главная"><span class="glyphicon glyphicon-home"></span></a></li>
+
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Катушки Мишина">Катушки Мишина <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://energodar.net/zdorov.php?str=pribory/znakomstvo" title="Знакомство с катушками Мишина"><span class="glyphicon glyphicon-cd"></span> Знакомство с катушками Мишина</a></li>
+					</ul>
+				</li>
+
+				<li class="dropdown"><a href="http://energodar.net/zdorov.php?str=pribory/kupit" rel="sidebar" title="Купить катушки Мишина">Купить катушки Мишина</a></li>
+
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Контент <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://energodar.net/?str=news" title="Новости Энергодара и Каменко-Днепровского района"><span class="glyphicon glyphicon-list-alt"></span> Обзор новостей</a></li>
+						<li><a href="http://energodar.net/?str=video" title="Видео Энергодара и Каменко-Днепровского района"><span class="glyphicon glyphicon-film"></span> Энергодарское видео</a></li>
+						<li class="divider"></li>
+						<li><a href="http://energodar.net/?str=board" title="Объявления Энергодара и Каменко-Днепровского района"><span class="glyphicon glyphicon-pushpin"></span> Объявления</a></li>
+						<li class="divider"></li>
+						<li><a href="http://energodar.net/?str=telefon" title="Справочник Энергодара"><span class="glyphicon glyphicon-phone-alt"></span> Справка Энергодара</a></li>
+						<li><a href="http://energodar.net/?str=telefon&gorod=kd" title="Справочник Каменко-Днепровского района"><span class="glyphicon glyphicon-phone-alt"></span> Справка Кам.-Днепровской</a></li>
+						<li class="divider"></li>
+						<li><a href="http://energodar.net/karta/" title="Карта Энергодара и Каменко-Днепровского района"><span class="glyphicon glyphicon-globe"></span> Энергодар на картах</a></li>
+					</ul>
+				</li>
+				<li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Блоги <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://energodar.net/zdorov.php"><span class="glyphicon glyphicon-plus"></span> Здоровье</a></li>
+						<li class="dropdown-header"><a href="http://energodar.net/zdorov.php?str=pribory/znakomstvo"><small><span class="glyphicon glyphicon-arrow-right"></span> Катушки Мишина</small></a></li>
+						<li><a href="http://energodar.net/energy.php"><span class="glyphicon glyphicon-flash"></span> Энергия даром</a></li>
+						<li><a href="http://energodar.net/ha-tha.php" title="Инь-Янь, Ха-Тха, белое-чёрное"><span class="glyphicon glyphicon-adjust"></span> КультТура/КультУра</a></li>
+						<li><a href="http://energodar.net/slovar/" title="Толково-этимологический словарь"><span class="glyphicon glyphicon-pencil"></span> Этимологический словарь</a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header">ещё:</li>
+						<li><a href="http://energodar.net/blog.php?str=scarlet"><span class="glyphicon glyphicon-minus"></span> Шали от Скарлет</a></li>
+						<li><a href="http://energodar.net/blog.php?str=prozrenie"><span class="glyphicon glyphicon-minus"></span> КОБ: Прозренье</a></li>
+						<li><a href="http://energodar.net/blog.php?str=gervi"><span class="glyphicon glyphicon-minus"></span> Теория эволюции Герви</a></li>
+						<li><a href="http://energodar.net/blog.php?str=webmaster"><span class="glyphicon glyphicon-minus"></span> Начинающему вебмастеру</a></li>
+						<li><a href="http://energodar.net/blog.php?str=payalnik"><span class="glyphicon glyphicon-minus"></span> Паяльник</a></li>
+						<li class="divider"></li>
+						<li><a href="http://energodar.net/blog.php"><span class="glyphicon glyphicon-comment"></span> Все</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Разное <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://energodar.net/?str=online_tv" title="Просмотр телевизионных каналы"><span class="glyphicon glyphicon-facetime-video"></span> ТВ, более 300 каналов</a></a></li>
+						<li><a href="http://energodar.net/?str=entv" title="Энергодарский телеканал EnTV Орион"><span class="glyphicon glyphicon-facetime-video"></span> телеканал EnTV Орион</a></a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header">Славянское время</li>
+						<li><a href="http://energodar.net/ha-tha.php?str=vedy/kalendar">Календарь</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#" rel="sidebar" onclick="addBookmark()" title="Добавить в закладки (в избранное)"><span class="glyphicon glyphicon-star"></span></a></li>
+				<li class=""><a href="http://energodar.net/?str=mail" title="Написать нам письмо"><span class="glyphicon glyphicon-envelope"></span></a></li>
+							</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</div><div class="container"><sape_index><ol class="breadcrumb">
+						<li><a href="http://energodar.net/" title="На главную страницу сайта"><span class="glyphicon glyphicon-home"></span></a></li>
+						<li><a href="blog.php">Блоги</a></li>
+						<li><a href="http://energodar.net/ha-tha.php" title="На главную страницу блога ХА-ТХА">ХА-ТХА</a></li><li><a href="http://energodar.net/ha-tha.php?str=vedy/index" id="razdel" contenteditable="false" data-name="razdel">Солнечные культы</a></li><li><a href="http://energodar.net/ha-tha.php?str=vedy/kalendar/index"></a><span id="nazva" contenteditable="false" data-name="nazva">Славяно-Арийский Календарь</span><a></a></li></ol>
+
+<p>
+<script language="javascript" type="text/javascript" src="modules/blog/ha-tha/vedy/script/kalendar.js"></script>
+</p>
+<table cellpadding="3" width="100%" border="0">
+<tbody>
+<tr>
+<td colspan="2"><span id="indikator">секундочку...</span></td>
+</tr>
+<tr>
+<td>
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+KrugoLet();
+	document.write('<ul><li>'+ S_M_Z_H +' Лѣто от <a href="#ЛетоСМЗХ">СМЗХ</a> - Сотворения Мира в Звёздном Храме (5 508 до р.х.)');
+	V_S = S_M_Z_H + 5500; document.write('<li>'+V_S+' Лѣто от <a href="#ЛетоотВеликойСтужи">Великой Стужи</a> и (Великого Похолодания) (11 008 до р.х.)');
+	T_P_V_P = S_M_Z_H + 32496; document.write('<li>'+T_P_V_P+' Лѣто от <a href="#Летоот3гоПрибытияВайтманыПеруна">3-го Прибытия Вайтманы Перуна</a> (38 004 до р.х.)');
+	S_V_K_R = S_M_Z_H + 37036; document.write('<li>'+S_V_K_R+' Лѣто от <a href="#ЛетоотСотворенияВеликогКолоРассении">Сотворения Великого Коло Рассении</a> (42 544 до р.х.)');
+	O_A_I = S_M_Z_H + 99270; document.write('<li>'+O_A_I+' Лѣто от <a href="#ЛетоотОснованияАсгардаИрийского">Основания Асгарда Ирийского</a> (от 9 Тайлетъ) (104 778 до р.х.)');
+	V_P_D = S_M_Z_H + 104298; document.write('<li>'+V_P_D+' Лѣто от <a href="#ЛетоотВеликогоПереселенияизДаарии">Великого Переселения из Даарии</a> (109 806 до р.х.)');
+	P_T_L = S_M_Z_H + 135482; document.write('<li>'+P_T_L+' Лѣто от <a href="#ЛетоотпериодаТрехЛун">периода Трех Лун</a> (140 990 до р.х.)');
+	A_D = S_M_Z_H + 145858;	document.write('<li>'+A_D+' Лѣто от <a href="#ЛетоотАссаДеи">Асса Деи</a> (151 336 до р.х.)');
+	V_TA = S_M_Z_H + 157522; document.write('<li>'+V_TA+' Лѣто от <a href="#ЛетоотВремениТары">Времени Тары</a> (163 030 до р.х.)');
+	V_TU = S_M_Z_H + 178258; document.write('<li>'+V_TU+' Лѣто от <a href="#ЛетоотВремениТуле">Времени Туле</a> (183 766 до р.х.)');
+	V_SVA = S_M_Z_H + 204178; document.write('<li>'+V_SVA+' Лѣто от <a href="#ЛетоотВремениСвага">Времени Свага</a> (209 686 до р.х.)');
+	V_XA = S_M_Z_H + 266386; document.write('<li>'+V_XA+' Лѣто от <a href="#ЛетоотВременихАрра">Времени х’Арра</a> (271 894 до р.х)');
+	V_DA = S_M_Z_H + 453010; document.write('<li>'+V_DA+' Лѣто от <a href="#ЛетоотВремениДары">Времени Дары</a> (458 518 до р.х.)');
+	V_T_S = S_M_Z_H + 596866; document.write('<li>'+V_T_S+' Лѣто от <a href="#ЛетоотВремениТрехСолнц">Времени Трех Солнц</a> (начало Даарийского летоисчисления) (602 374 до р.х.)');
+	TRI_SUN = S_M_Z_H+950000; document.write('<li>'+TRI_SUN+' Лѣто от <a href="#ЛетоотВремениотвременипоявленияБогов">Времени появления Богов</a> (955 508 до р.х.)');
+	document.write('<li>1,5млрд Лѣто от <a href="#ЛетоотприбытиянаМидгард">прибытия на Мидгард первой вайтмары Великой Расы Рода небесного</a></ul>');
+// ]]></script>
+</td>
+<td valign="top"><b>Содержание:</b><br /><br /> <a href="#Славяно-АрийскийКалендарь">Славяно-Арийский Календарь</a><br /> <a href="#СлавянскиеМерыВремени">Славянские меры времени</a><br /> <a href="#ЩитЧислобога">Щит Числобога</a><br /> <a href="#Расчёты">Расчёты</a><br /> <a href="#ОбереговоеЧисло">Обереговое число</a><br /> <a href="#КалендарныесистемыЕвропы">Календарные системы Европы</a><br /> <a href="#Юлианскийкалендарь">Юлианский календарь</a><br /> <a href="#Григорианскийкалендарь">Григорианский календарь</a><br /> <a href="#ГодавместоЛета">Года вместо Лета</a><br /> <a href="#КалендарныеФормыСчисления">Календарные формы счисления</a><br /> <a href="ha-tha.php?str=vedy/vostok">Восточная система</a></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td background="../img/usor.gif" height="15"><span size="1" face="Arial" style="font-family: Arial; font-size: xx-small;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<h3 align="center"><a name="Славяно-АрийскийКалендарь"></a>Славяно-Арийский Календарь<br /><small> (Ведический)</small></h3>
+<p align="right"><i>Наше летоисчисление не связано ни с Солнцем, ни с Землями, ни<br /> &nbsp;с Лунами, ни со Звёздами, а связано с Законами Творца Единого.<br /> Ибо Солнца, Звёзды, Земли и Луны убыстряют и замедляют свой<br /> &nbsp;ход, а Законы Творца Единого НЕЗЫБЛЕМЫ, и за соблюдением их<br /> &nbsp;наблюдает Числобог, который является хранителем Рек Времени.</i></p>
+<p align="justify"><b>Происхождение слова "календарь"</b><br /> Нам говорят, что слово календарь произошло от латинского "<b>calendarium</b>", что в переводе с латинского означает буквально следующее: "запись ссуд", "долговая книга". Дело в том, что в Древнем Риме должники выплачивали долги или проценты в первые дни месяца, т.е. в дни календ (от лат. "calendae" или "kalendae", ещё "календы" ‒ название первого дня месяца у древних римлян). А вот у греков календ не было. По&shy;этому о закоренелых неплательщиках римляне иронично говорили, что они вернут долг в греческие календы, то есть неизвестно когда. Это выражение стало крылатым во многих языках мира.</p>
+<p align="justify">Если вернуться к латинскому языку, то выясняется, что "долг" на латыни "debitum", "книга" ‒ "libellus", "liber libri". "Записка" ‒ "nota", "litterae". Записка в смысле "блокнот" ‒ "album", "tabella". "Ссуда" будет "faeneror". А некоторые первую часть от "calendarium" слово "caleo" переводят как "провозглашать", но перевести "ndarium" (или хотя бы "darium") они не могут. Видно, что calendarium ничего общего с судами и долгами не имеет. Так может это слово позаимствовали у нас?</p>
+<p align="justify" style="text-align: center;"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/kruglet.jpg" rel="lightbox"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/kruglet.jpg" class="img-rounded" width="188" height="270" /></a></p>
+<p align="justify">Название Славяно-Арийского Календаря "<b>Каляды Дар<a href="#Ъ">ъ</a></b>", что буквально&nbsp;означает подарок Коляды. Т.е. слово "календарь" происходит не от "долговой книги" римлян, а от сращения <b>Каляды Даръ</b>. Другое название Календаря&nbsp;&mdash; <b>Кругол<a href="#ие">ѣ</a>т Числобога</b>.</p>
+<p align="justify">Ныне древним <span style="color: #006699;"><b>Даарийским Круголѣтом Числобога</b></span> (ДКЧ) пользуются только ПравоСлавные Славяне (не путать с христианами) Староверы-Инглинги и Ирландский Орден Друидов. ДКЧ уходит своими корнями во времена, когда наши Предки жили на северном материке, который они называли <b> <a href="#ЛетоотВеликогоПереселенияизДаарии">Даария</a></b> (Гиперборея, Арктида, Арктогея). Календарь имеет Руническую форму отображения, т.е. названия Сороковников (месяцев), чисел, дней недели и названия Лѣт записывались Рунами (тайными Образами для передачи большого объёма информации). Первый Сороковник обозначался одной Руной, а остальные обозначались соединением двух Рун, причем вторая Руна, указывала на часть цикла вращения нашей Земли вокруг нашего <b><span style="color: #ff0000;"><a href="ha-tha.php?str=vedy/zvezd_i_zemli"> <span style="color: #ff0000;">Ярилы</span></a></span></b>. Этот цикл называется <b> <span style="color: #ff0000;">Лѣто</span></b> ("<a href="#ГодавместоЛета">года</a>" в место <b> <span style="color: #ff0000;">Лѣт </span></b>появились при Петре I, а образ "год" (от "година") обозначает "структурный" отрезок времени в <a href="#ДКЧ">ДКЧ</a> (с 1-го по 144-ый год)). От слова "<b><span style="color: #ff0000;">Лѣто</span></b>" в нашем языке сохранились понятия: летопись, летописец, летоисчисление, сколько Вам лет и т. д.</p>
+<p align="justify">Календарь основан на древнейшей 16-тиричной системе счисления. 16 Лѣт образуют <b><span style="color: #0000ff;">Круголѣт</span></b>, который проходит через 9 стихий, создавая <b><span style="color: #008000;">Круг Жизни</span></b> в 144 лета. И несмотря на свою необычность, для современного восприятия, эта календарная система, наиболее точная и удобная из всех существующих на данный момент календарей. За последние несколько десятков тысяч лет, наш календарь не "убежал" и не "отстал" ни на один день, т.к он опирается на модель Вселенной и на осевую централизацию и галактическую ориентацию Земли.</p>
+<p align="justify">Наша Мидгард-Земля движется вокруг <b> <span style="color: #ff0000;"><a href="ha-tha.php?str=vedy/zvezd_i_zemli"> Ярилы</a></span></b>, вращаясь вокруг своей оси, а ось, медленно движется по круговому конусу. При этом северный полюс описывает в пространстве эллипс, который является основанием этого конуса. Ось этого конуса перпендикулярна плоскости земной орбиты, а угол между осью и образующей конуса равен примерно 23&deg;. Это движение оси вращения по круговому конусу по научному называется прецессией, а наши Предки называли<span style="color: #0000ff;"><b> Сутками Сварога</b></span>. И в результате этого полный (визуально наблюдаемый с Земли) оборот звёздного неба, все 16 <b>Чертогов</b> (созвездий) происходит за <b>25920</b> лет. На данный момент астрономы считают длину прецессии равной 25729 года (Платонов год). Астрологи считают, что цикл прецессии составляет 25920 лет и одна астрологическая эра равна 1/12 цикла и составляет 2160 лет. Раньше, до катаклизма, прецессии не было, угол оси был примерно 30&deg; и ось строго смотрела в центр нашей галактики:</p>
+<p align="justify">&laquo;<i>&hellip;В центре Сварги явлен Чертог Огня &ndash; Стожары (Светожары) &ndash; сама Кузня Сварога, Исток всего Сущего. Сие &ndash; вершина <a href="ha-tha.php?str=vedy/derevo">Мирового Древа</a>, Мер-горы, место соприкосновения нашего мира со Сверхмиром, в коем сущий Сам Всевышний Род. В Стожарах Гой Рода &ndash; Ост Всемирья &ndash; пронзает Мировое Яйцо нашей Вселенной, зачиная Коловращение Сварги. Сии Стожары &ndash; суть Звезда Севера, которую ныне называют Полярной, а Пращуры наши нарекали Седавой, Сяд-звездой. У Седавы явлены звёздные образы Сварога и Лады в облике человечьем &ndash; Созвездия, ныне именуемые Цефеем и Кассиопеей. Сварог и Лада посолонь ходят у Древа Миров, кое обвивают Страж его &ndash; Велес в обличье Огненного Змея (созвездие Дракона). Рядом также видно созвездие, которые иные именуют Медведицей, другие &ndash; Коровой, а третьи &ndash; Оленем. Сие стражи Ирийские &ndash; Велес и Дажьбог. В самом центре Стожар Сварожих есмь образ огненный Ковша (Малой Медведицы). Сей Ковш забросил на небо Велес, а потом &ndash; Крышень&hellip;</i>&raquo;</p>
+<p align="justify" style="text-align: center;"><span style="color: #0000ff;"><b><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/gerb.jpg" class="img-rounded" /></b></span></p>
+<p align="justify"><span style="color: #0000ff;"><b>Ярило-Солнце</b></span> входит в Чертог "огненного Ковша", у которого название <span style="color: #0000ff;"><b> Зимун</b></span>. Чертог &ndash; это система светил (<a href="#Солнце">Солнц</a> и <a href="#Звезда">Звёзд</a>), движущихся по своим орбитам, вокруг центра Чертога, где располагается объект, который астрономы называют нейтронной звездой, которая была открыта в 2004 году. В астрономии она называется <a target="_blank" href="out.php?link=http://it.moldova.org/news/nepodalyoku-ot-solnechnoi-sistemi-obnaruzhena-neitronnaya-zvezda-redkoi-raznovidnosti-68280-rus"> 1RXS J141256.0+792204</a>.</p>
+<p align="justify">На гербе <span style="color: #0000ff;"><b>Беловодья</b></span> можно увидеть месторасположение Ярилы в Чертоге Зимун. Ярила изображён в виде <span style="color: #ff9900;"><b>Звезды Инглии</b></span>, окружённый шестнадцатью Чертогами, по которым Ярила на протяжении <span style="color: #6600cc;"><b><a name="СварожийКруг"></a>Сварожьего Круга</b></span> (для земного наблюдателя) в течении одного <b><span style="color: #ff0000;"> Лѣта </span></b>перемещается из Чертога в Чертог в противоположном направлении от обычного годового цикла: <b>Чертог <a href="ha-tha.php?str=vedy/sva_krug#1" target="_blank">Девы</a>, <a href="ha-tha.php?str=vedy/sva_krug#2" target="_blank">Вепря</a></b>, <b><a href="ha-tha.php?str=vedy/sva_krug#3" target="_blank">Щуки</a></b>, <b> <a href="ha-tha.php?str=vedy/sva_krug#4" target="_blank">Лебеди</a></b>, <b><a href="ha-tha.php?str=vedy/sva_krug#5" target="_blank">Змея</a>, <a href="ha-tha.php?str=vedy/sva_krug#6" target="_blank">Ворона</a></b>, <b> <a href="ha-tha.php?str=vedy/sva_krug#7" target="_blank">Медведя</a></b>, <b><a href="ha-tha.php?str=vedy/sva_krug#8" target="_blank">Бусла</a></b>, <b><a href="ha-tha.php?str=vedy/sva_krug#9" target="_blank">Волка</a>, <a href="ha-tha.php?str=vedy/sva_krug#10" target="_blank">Лисы</a>, <a href="ha-tha.php?str=vedy/sva_krug#11" target="_blank">Тура</a>,&nbsp; <a href="ha-tha.php?str=vedy/sva_krug#12" target="_blank">Лося</a>, <a href="ha-tha.php?str=vedy/sva_krug#13" target="_blank">Финиста</a>, <a href="ha-tha.php?str=vedy/sva_krug#14" target="_blank">Коня</a>, <a href="ha-tha.php?str=vedy/sva_krug#15" target="_blank">Орла</a>, <a href="ha-tha.php?str=vedy/sva_krug#16" target="_blank">Раса</a></b>:</p>
+<div align="center">
+<table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse;" bordercolor="#111111">
+<tbody>
+<tr>
+<td align="center">&nbsp;</td>
+<td align="center"><b>Чертог</b></td>
+<td align="center"><b>Даты</b></td>
+<td align="center"><b>Оберег</b></td>
+</tr>
+<tr>
+<td>1</td>
+<td><b><a href="ha-tha.php?str=vedy/sva_krug#1" target="_blank">Чертог Девы</a></b></td>
+<td>18 Тайлетъ ‒ 1 Рамхатъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/1.jpg" rel="lightbox">Рис</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td><b> <a href="ha-tha.php?str=vedy/sva_krug#2" target="_blank">Чертог Вепря</a></b></td>
+<td>1 Рамхатъ ‒ 22 Рамхатъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/2.jpg" rel="lightbox">Рис</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td><b><a href="ha-tha.php?str=vedy/sva_krug#3" target="_blank">Чертог Щуки</a></b></td>
+<td>22 Рамхатъ ‒ 4 Айлетъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/3.jpg" rel="lightbox">Рис</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td><b><a href="ha-tha.php?str=vedy/sva_krug#4" target="_blank">Чертог Лебедя</a></b></td>
+<td>4 Айлетъ ‒ 25 Айлетъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/4.jpg" rel="lightbox">Рис</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td><b><a href="ha-tha.php?str=vedy/sva_krug#5" target="_blank">Чертог Змеи</a></b></td>
+<td>25 Айлетъ ‒ 7 Бейлетъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/5.jpg" rel="lightbox">Рис</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td><b> <a href="ha-tha.php?str=vedy/sva_krug#6" target="_blank">Чертог Ворона</a></b></td>
+<td>7 Бейлетъ ‒ 29 Бейлетъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/6.jpg" rel="lightbox">Рис</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td><b><a href="ha-tha.php?str=vedy/sva_krug#7" target="_blank">Чертог Медведя</a></b></td>
+<td>29 Бейлетъ ‒ 12 Гэйлетъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/7.jpg" rel="lightbox">Рис</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td><b><a href="ha-tha.php?str=vedy/sva_krug#8" target="_blank">Чертог Бусла</a></b></td>
+<td>12 Гэйлетъ ‒ 37 Гэйлетъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/8.jpg" rel="lightbox">Рис</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td><b><a href="ha-tha.php?str=vedy/sva_krug#9" target="_blank">Чертог Волка</a></b></td>
+<td>37 Гэйлетъ ‒ 22 Дайлетъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/9.jpg" rel="lightbox">Рис</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td><b><a href="ha-tha.php?str=vedy/sva_krug#10" target="_blank">Чертог Лисы</a></b></td>
+<td>22 Дайлетъ ‒ 4 Элетъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/10.jpg" rel="lightbox">Рис</a></td>
+</tr>
+<tr>
+<td>11</td>
+<td><b><a href="ha-tha.php?str=vedy/sva_krug#11" target="_blank">Чертог Тура</a></b></td>
+<td>4 Элетъ ‒ 26 Элетъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/11.jpg" rel="lightbox">Рис</a></td>
+</tr>
+<tr>
+<td>12</td>
+<td><b> <a href="ha-tha.php?str=vedy/sva_krug#12" target="_blank">Чертог Лося</a></b></td>
+<td>26 Элетъ ‒ 9 Вэйлетъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/12.jpg" rel="lightbox">Рис</a></td>
+</tr>
+<tr>
+<td>13</td>
+<td><b> <a href="ha-tha.php?str=vedy/sva_krug#13" target="_blank">Чертог Финиста</a></b></td>
+<td>9 Вэйлетъ ‒ 31 Вэйлетъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/13.jpg" rel="lightbox">Рис</a></td>
+</tr>
+<tr>
+<td>14</td>
+<td><b><a href="ha-tha.php?str=vedy/sva_krug#14" target="_blank">Чертог Коня</a></b></td>
+<td>31 Вэйлетъ ‒ 13 Хейлетъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/14.jpg" rel="lightbox">Рис</a></td>
+</tr>
+<tr>
+<td>15</td>
+<td><b> <a href="ha-tha.php?str=vedy/sva_krug#15" target="_blank">Чертог Орла</a></b></td>
+<td>13 Хейлетъ ‒ 35 Хейлетъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/15.jpg" rel="lightbox">Рис</a></td>
+</tr>
+<tr>
+<td>16</td>
+<td><b> <a href="ha-tha.php?str=vedy/sva_krug#16" target="_blank">Чертог Раса</a></b></td>
+<td>35 Хейлетъ ‒ 18 Тайлетъ</td>
+<td align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/obereg/16.jpg" rel="lightbox">Рис</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p align="justify" target="_blank"></p>
+<p align="justify" target="_blank" style="text-align: center;"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/derevo.gif" class="img-rounded" /></p>
+<p align="justify" target="_blank">Когда <span style="color: #ff0000;"> <b>Ярило-Солнце</b></span> проходит определенный Чертог, соединение его Света со Светом Чертога даёт <a href="ha-tha.php?str=vedy/sva_krug" target="_blank">влияние на судьбы и характер людей</a>, и даёт Силу, которую воспринимают Священные <a href="ha-tha.php?str=vedy/derevo" target="_blank">Деревья</a>, которые растут на Мидгард-Земле.</p>
+<p align="justify">Положение <a href="ha-tha.php?str=vedy/zvezd_i_zemli" target="_blank">Солнца</a> на небосклоне определяется во время солнцестояний, т.е. в каком созвездии (чертоге) находится <a href="ha-tha.php?str=vedy/zvezd_i_zemli" target="_blank">Солнце</a> 22 марта (латинский, западный стиль) или 22 сентября (арийский, русский стиль) &ndash; в ту эпоху мы и живем. Так как, в отличие от западной и китайской астрологии, Славяно-Арии на небесном своде различают не 12, а 16 зодиакальных созвездий (чертогов), то, соответственно, и зодиакальная эпоха длится не 2160, а 1620 лет. То есть, точка осеннего солнцестояния <a href="ha-tha.php?str=vedy/zvezd_i_zemli" target="_blank">Солнца</a> каждые 1620 лет переходит в новый чертог:</p>
+<table align="center" border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse;" bordercolor="#111111">
+<tbody>
+<tr>
+<th colspan="5"><a name="ЭпохиСутокСварога"></a>Эпохи Суток Сварога</th>
+</tr>
+<tr>
+<th>№</th>
+<th>Название чертога, эпохи</th>
+<th>Бог-Покровитель</th>
+<th>Дата эпохи</th>
+<th>Описание эпохи</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Дева</td>
+<td>Джива</td>
+<td>10948-9328&nbsp;г. до н. эры</td>
+<td>Вечер</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Раса (Леопард)</td>
+<td>Даждьбог (Тарх)</td>
+<td>9328-7708&nbsp;г. до н. эры</td>
+<td>Вечер</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Орёл</td>
+<td>Перун</td>
+<td>7708-6088&nbsp;г. до н. эры</td>
+<td>Вечер</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Конь</td>
+<td>Купала</td>
+<td>6088-4468&nbsp;г. до н. эры</td>
+<td>Вечер</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Финист</td>
+<td>Вышень</td>
+<td>4468-2848&nbsp;г. до н. эры</td>
+<td>Ночь</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Лось</td>
+<td>Лада</td>
+<td>2848-1228&nbsp;г. до н. эры</td>
+<td>Ночь</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Тур</td>
+<td>Крышень</td>
+<td>1228-392&nbsp;г. до н. эры</td>
+<td>Ночь</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Лиса</td>
+<td>Марена</td>
+<td>392-2012&nbsp;г. н. эры</td>
+<td><a href="#ЭпохаЛисы">Ночь ‒ самое тёмное предрассветное время</a></td>
+</tr>
+<tr>
+<td><b>9</b></td>
+<td><b>Волк (Белый Пёс)</b></td>
+<td><b>Велес</b></td>
+<td><b>2012-3632&nbsp;г. н. эры</b></td>
+<td><b>Утро</b></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Бусл (аист)</td>
+<td>Род</td>
+<td>3632-5252&nbsp;г. н. эры</td>
+<td>Утро</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Медведь</td>
+<td>Сварог</td>
+<td>5252-6872&nbsp;г. н. эры</td>
+<td>Утро</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Ворон</td>
+<td>Коляда, Варуна</td>
+<td>6872-8492&nbsp;г. н. эры</td>
+<td>Утро</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Змей</td>
+<td>Семаргл</td>
+<td>8492-10112&nbsp;г. н. эры</td>
+<td>День</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Лебедь</td>
+<td>Макошь</td>
+<td>10112-11732&nbsp;г. н. эры</td>
+<td>День</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Щука</td>
+<td>Рожана</td>
+<td>11732-13352&nbsp;г. н. эры</td>
+<td>День</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Вепрь</td>
+<td>Рамхат</td>
+<td>13352-14972&nbsp;г. н. эры</td>
+<td>День</td>
+</tr>
+</tbody>
+</table>
+<p align="justify"><span style="color: #ff0000;"><b>Ярило-Солнце</b></span> входит в "систему тройной звезды" (выражаясь астрономическим языком). Кроме него в неё (тройную систему) входит Белый Гигант и Коричневый Карлик (<b>Мара</b>). Одна из Земель Коричневого Карлика ‒ <b>Нимизида</b>, которую изображали, как диск с крыльями, имеющая период обращения 3600 лет.</p>
+<p align="justify"><span style="color: #0000ff;"><b>Сутки Сварога</b></span> = 180 <span style="color: #006600;"> <b> Кругов Жизни</b></span> (25 920 Лет). Сейчас считают веками (по 100 лет), а Славяно-Арии считали <span style="color: green;"> <b>Кругами Жизни</b></span>, который состоит из 9-ти <span style="color: #0000ff;"><b> Кругов Лѣт </b></span>или равен 144 <span style="color: #ff0000;"> <b> Лѣта </b></span>‒ это минимальный срок жизни для людей в этом мире. Соответственно <span style="color: #0000ff;"><b> Круг Лѣт</b></span> = 16 <span style="color: #ff0000;"> <b> Лѣт</b></span>: пятнадцать <b>простых</b> <span style="color: #ff0000;"> <b> Лѣт</b></span> и шестнадцатое ‒ <b> <span style="color: #ff00ff;">Священное</span> <span style="color: #ff0000;">Лѣто</span></b>. Это происходит из-за того, что каждые шестнадцать лет орбита Мидгарда удлиняется из-за взаимодействия с другими Землями (планетами) и Лето удлиняется на 4 дня. Этот цикл также <a href="http://azhur-ot-scarlet.com" target="_blank">связан</a> с древними событиями, а именно 15 лет шло <a href="#ЛетоотВеликогоПереселенияизДаарии">переселение</a> Родов Расы Великой из <a href="#ЛетоотВеликогоПереселенияизДаарии">Даарии</a> в Рассению (территория от Урала до Тихого океана), а 16-ое Лѣто наши Предки обживали новые земли и возносили славу Богам Нашим. В честь этого события Предки стали праздновать Пасхеть, что в переводе с х`Арийской руники означает "Путь по которому шли Боги".</p>
+<p align="justify">Отчёт <b> <span style="color: #ff0000;">Лѣт</span></b> ведется от дня Великого праздника <b>Рамха-Ита</b> (или от дня <b>Новолетия</b>, т.е. начало нового <b> <span style="color: #ff0000;">Лѣта</span></b>).</p>
+<p align="justify">Каждое <span style="color: #ff0000;"> <b> Лѣто</b></span> имеет своё название. Сейчас Лѣто "
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+document.write(Krug);
+// ]]></script>
+". Чтобы это проверить, по таблице <b><a name="ДКЧ"></a>ДКЧ</b> нужно к году от Р.Х. прибавить 5508, а если уже прошел день осеннего равноденствия, то прибавить 5509. И от полученного отнять 7376, если расчёт до 2012 года или 7520, если расчёт после 2012 года. Получим Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+document.write(Krug_Zizni);
+// ]]></script>
+. По таблице <b>ДКЧ</b> находим, что числу
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+document.write(Krug_Zizni);
+// ]]></script>
+соответствует Лѣто "
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+document.write(Krug);
+// ]]></script>
+".</p>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse;" bordercolor="#333" width="100%" bgcolor="#EFEEF0">
+<tbody>
+<tr>
+<td width="200%" colspan="20" align="center"><b> <a name="0"></a>Даарийский Круголет Числобога</b></td>
+</tr>
+<tr>
+<td width="2%" align="center" rowspan="3"><b>Кру-<br /> го-<br /> лѣт</b></td>
+<td width="8%" align="center"><b>Стихия</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#000000"><b style="color: #ffffff;">Земля</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#FF0000"><b>Звезда</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#FF3399"><b>Огонь</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#FFFF00"><b>Солнце</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#33CC33"><b>Дерево</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#66CCFF"><b>Свага</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#0000FF"><b style="color: #ffffff;">Океан</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#9933FF"><b style="color: #ffffff;">Луна</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#FFFFFF"><b>Бог</b></td>
+</tr>
+<tr>
+<td width="8%" align="center"><b>Цвет</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#000000"><b style="color: #ffffff;">Чёрный</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#FF0000"><b>Красный</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#FF3399"><b>Алый</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#FFFF00"><b>Златый</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#33CC33"><b>Зелень</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#66CCFF"><b>Небесный</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#0000FF"><b style="color: #ffffff;">Синий</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#9933FF"><b style="color: #ffffff;">ФиоЛѣтовый</b></td>
+<td width="8%" colspan="2" align="center" bgcolor="#FFFFFF"><b>Белый</b></td>
+</tr>
+<tr>
+<td width="8%" align="center"><b>Назв. / Начало</b></td>
+<td width="4%" align="center"><i><b>Ж</b></i></td>
+<td width="4%" align="center"><i><b>М</b></i></td>
+<td width="4%" align="center"><i><b>Ж</b></i></td>
+<td width="4%" align="center"><i><b>М</b></i></td>
+<td width="4%" align="center"><i><b>Ж</b></i></td>
+<td width="4%" align="center"><i><b>М</b></i></td>
+<td width="4%" align="center"><i><b>Ж</b></i></td>
+<td width="4%" align="center"><i><b>М</b></i></td>
+<td width="4%" align="center"><i><b>Ж</b></i></td>
+<td width="4%" align="center"><i><b>М</b></i></td>
+<td width="4%" align="center"><i><b>Ж</b></i></td>
+<td width="4%" align="center"><i><b>М</b></i></td>
+<td width="4%" align="center"><i><b>Ж</b></i></td>
+<td width="4%" align="center"><i><b>М</b></i></td>
+<td width="4%" align="center"><i><b>Ж</b></i></td>
+<td width="4%" align="center"><i><b>М</b></i></td>
+<td width="4%" align="center"><i><b>Ж</b></i></td>
+<td width="4%" align="center"><i><b>М</b></i></td>
+</tr>
+<tr>
+<td width="2%" align="center">1</td>
+<td width="8%" align="center">Путь&nbsp;(странник)</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#1">1</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#129">129</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#113">113</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#97">97</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#81">81</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#65">65</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#49">49</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#33">33</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#17">17</a></td>
+<td width="4%" align="center">&nbsp;</td>
+</tr>
+<tr>
+<td width="2%" align="center">2</td>
+<td width="8%" align="center">Жрец</td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#2">2</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#130">130</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#114">114</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#98">98</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#82">82</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#66">66</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#50">50</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#34">34</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#18">18</a></td>
+</tr>
+<tr>
+<td width="2%" align="center">3</td>
+<td width="8%" align="center">Жрица</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#19">19</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#3">3</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#131">131</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#115">115</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#99">99</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#83">83</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#67">67</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#51">51</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#35">35</a></td>
+<td width="4%" align="center">&nbsp;</td>
+</tr>
+<tr>
+<td width="2%" align="center">4</td>
+<td width="8%" align="center">Мiр&nbsp;(Явь)</td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#20">20</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#4">4</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#132">132</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#116">116</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#100">100</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#84">84</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#68">68</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#52">52</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#36">36</a></td>
+</tr>
+<tr>
+<td width="2%" align="center">5</td>
+<td width="8%" align="center">Свиток</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#37">37</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#21">21</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#5">5</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#133">133</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#117">117</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#101">101</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#85">85</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#69">69</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#53">53</a></td>
+<td width="4%" align="center">&nbsp;</td>
+</tr>
+<tr>
+<td width="2%" align="center">6</td>
+<td width="8%" align="center">Феникс</td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#38">38</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#22">22</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#6">6</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#134">134</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#118">118</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#102">102</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#86">86</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#70">70</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#54">54</a></td>
+</tr>
+<tr>
+<td width="2%" align="center">7</td>
+<td width="8%" align="center">Лис&nbsp;(Навь)</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#55">55</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#39">39</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#23">23</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#7">7</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#135">135</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#119">119</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#103">103</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#87">87</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#71">71</a></td>
+<td width="4%" align="center">&nbsp;</td>
+</tr>
+<tr>
+<td width="2%" align="center">8</td>
+<td width="8%" align="center">Дракон</td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#56">56</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#40">40</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#24">24</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#8">8</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#136">136</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#120">120</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#104">104</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#88">88</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#72">72</a></td>
+</tr>
+<tr>
+<td width="2%" align="center">9</td>
+<td width="8%" align="center">Змей</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#73">73</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#57">57</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#41">41</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#25">25</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#9">9</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#137">137</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#121">121</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#105">105</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#89">89</a></td>
+<td width="4%" align="center">&nbsp;</td>
+</tr>
+<tr>
+<td width="2%" align="center">10</td>
+<td width="8%" align="center">Орёл</td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#74">74</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#58">58</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#42">42</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#26">26</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#10">10</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#138">138</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#122">122</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#106">106</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#90">90</a></td>
+</tr>
+<tr>
+<td width="2%" align="center">11</td>
+<td width="8%" align="center">Дельфин</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#91">91</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#75">75</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#59">59</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#43">43</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#27">27</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#11">11</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#139">139</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#123">123</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#107">107</a></td>
+<td width="4%" align="center">&nbsp;</td>
+</tr>
+<tr>
+<td width="2%" align="center">12</td>
+<td width="8%" align="center">Конь</td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#92">92</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#76">76</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#60">60</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#44">44</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#28">28</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#12">12</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#140">140</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#124">124</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#108">108</a></td>
+</tr>
+<tr>
+<td width="2%" align="center">13</td>
+<td width="8%" align="center">Пёс</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#109">109</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#93">93</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#77">77</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#61">61</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#45">45</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#29">29</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#13">13</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#141">141</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#125">125</a></td>
+<td width="4%" align="center">&nbsp;</td>
+</tr>
+<tr>
+<td width="2%" align="center">14</td>
+<td width="8%" align="center">Тур&nbsp;(бык)</td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#110">110</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#94">94</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#78">78</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#62">62</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#46">46</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#30">30</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#14">14</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#142">142</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#126">126</a></td>
+</tr>
+<tr>
+<td width="2%" align="center">15</td>
+<td width="8%" align="center">Хоромы&nbsp;(дом)</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#127">127</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#111">111</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#95">95</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#79">79</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#63">63</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#47">47</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#31">31</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#15">15</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#143">143</a></td>
+<td width="4%" align="center">&nbsp;</td>
+</tr>
+<tr>
+<td width="2%" align="center"><b>16</b></td>
+<td width="8%" align="center"><b>Капище&nbsp;(храм)</b></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#128">128</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#112">112</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#96">96</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#80">80</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#64">64</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#48">48</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#32">32</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#16">16</a></td>
+<td width="4%" align="center">&nbsp;</td>
+<td width="4%" align="center"><a href="ha-tha.php?str=vedy/dk4#144">144</a></td>
+</tr>
+</tbody>
+</table>
+<p align="justify">Для примера, сравните с <a href="ha-tha.php?str=vedy/vostok">восточной календарной системой</a>.</p>
+<p align="justify">Каждое <b> <span style="color: #ff0000;">Лѣто</span></b> имеет 9 <span style="color: #6699ff;"> <b>Сороковников</b></span> (месяцев) и содержит три природных сезона: <b>Оусень</b>, <b>Зима</b> и <b>Весна</b>. Т.е. на каждый природный сезон приходится по три Сороковника.<br /> <span style="color: #ff0000;"> <b><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/runy/leto.gif" class="img-rounded" /> </b></span> <b> <span style="color: darkred;">Простое </span> <span style="color: #ff0000;">Лѣто</span></b> = 365 <span style="color: #9933ff;"> <b>Суток</b></span>, в котором все нечетные Сороковники содержат по 41 дню, а чётные ‒ по 40 дней. (5х41=205)+(4х40=160)=365.<b><span style="color: #ff00ff;"> <br /> <img src="http://energodar.net/modules/blog/ha-tha/vedy/img/runy/sv_leto.gif" class="img-rounded" /> Священное </span> <span style="color: #ff0000;">Лѣто</span></b> = 369 <span style="color: #9933ff;"> <b>Суток</b></span> в котором все Сороковники содержат по 41 дню. (9х41)=369.<b> <br /> Неполный <span style="color: #6699ff;"><a name="Сороковник"></a>Сороковник</span></b> = 40 <span style="color: #9933ff;"> <b>Суток</b></span>. <br /> <b>Полный <span style="color: #6699ff;">Сороковник</span></b> = 41 <span style="color: #9933ff;"> <b>Сутки</b></span>.</p>
+<p>Вместо современных месяцев "встарь считали сороками: первое сорок, другое сорок и пр.", "Что девять сороков, что четыре девяноста &mdash; одно", "Сороковины или сорочины ж. мн. поминки, поминание, поминовение, упокойная память, молитва, в 40-й день" ‒ выдержки из словаря В.Даля</p>
+<p align="justify">Все Сороковники (месяцы) начинались в строго определенные дни недели. Например, если первый Сороковник года начинается во вторник, то и все остальные нечетные Сороковники будут начинаться во вторник, а четные &mdash; в седмицу. Поэтому тот календарик, который мы сегодня носим с собой и который содержит 12 разных табличек-месяцев, раньше содержал всего две таблички: одну &mdash; для нечетных месяцев, другую &mdash; для четных:</p>
+<div align="center">
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse;" bordercolor="#111111" width="500">
+<tbody>
+<tr>
+<td width="200" align="center" colspan="2"><b>День недели</b></td>
+<td width="150" colspan="5" align="center"><b>Нечётный (полный) Сороковник</b></td>
+<td width="150" colspan="5" align="center"><b>Чётный (неполный) Сороковник</b></td>
+</tr>
+<tr>
+<td width="30" align="center" bgcolor="#000000" bordercolor="#FFFFFF">
+<p align="center"><span style="color: #ffffff;"><b>1</b></span></p>
+</td>
+<td width="170" align="center" bgcolor="#000000" bordercolor="#FFFFFF"><b><span style="color: #ffffff;">Понедельникъ</span></b></td>
+<td width="30" align="center" bgcolor="#000000" bordercolor="#FFFFFF"><span style="color: #ffffff;">1</span></td>
+<td width="30" align="center" bgcolor="#000000" bordercolor="#FFFFFF"><span style="color: #ffffff;">10</span></td>
+<td width="30" align="center" bgcolor="#000000" bordercolor="#FFFFFF"><span style="color: #ffffff;">19</span></td>
+<td width="30" align="center" bgcolor="#000000" bordercolor="#FFFFFF"><span style="color: #ffffff;">28</span></td>
+<td width="30" align="center" bgcolor="#000000" bordercolor="#FFFFFF"><span style="color: #ffffff;">37</span></td>
+<td width="30" align="center" bgcolor="#000000" bordercolor="#FFFFFF">&nbsp;</td>
+<td width="30" align="center" bgcolor="#000000" bordercolor="#FFFFFF"><span style="color: #ffffff;">5</span></td>
+<td width="30" align="center" bgcolor="#000000" bordercolor="#FFFFFF"><span style="color: #ffffff;">14</span></td>
+<td width="30" align="center" bgcolor="#000000" bordercolor="#FFFFFF"><span style="color: #ffffff;">23</span></td>
+<td width="30" align="center" bgcolor="#000000" bordercolor="#FFFFFF"><span style="color: #ffffff;">32</span></td>
+</tr>
+<tr>
+<td width="30" align="center" bgcolor="#FF0000"><b>2</b></td>
+<td width="170" align="center" bgcolor="#FF0000"><b>Вторникъ</b></td>
+<td width="30" align="center" bgcolor="#FF0000">2</td>
+<td width="30" align="center" bgcolor="#FF0000">11</td>
+<td width="30" align="center" bgcolor="#FF0000">20</td>
+<td width="30" align="center" bgcolor="#FF0000">29</td>
+<td width="30" align="center" bgcolor="#FF0000">38</td>
+<td width="30" align="center" bgcolor="#FF0000">&nbsp;</td>
+<td width="30" align="center" bgcolor="#FF0000">6</td>
+<td width="30" align="center" bgcolor="#FF0000">15</td>
+<td width="30" align="center" bgcolor="#FF0000">24</td>
+<td width="30" align="center" bgcolor="#FF0000">33</td>
+</tr>
+<tr>
+<td width="30" align="center" bgcolor="#FF3399"><b>3</b></td>
+<td width="170" align="center" bgcolor="#FF3399"><b>Тритейникъ</b></td>
+<td width="30" align="center" bgcolor="#FF3399">3</td>
+<td width="30" align="center" bgcolor="#FF3399">12</td>
+<td width="30" align="center" bgcolor="#FF3399">21</td>
+<td width="30" align="center" bgcolor="#FF3399">30</td>
+<td width="30" align="center" bgcolor="#FF3399">39</td>
+<td width="30" align="center" bgcolor="#FF3399">&nbsp;</td>
+<td width="30" align="center" bgcolor="#FF3399">7</td>
+<td width="30" align="center" bgcolor="#FF3399">16</td>
+<td width="30" align="center" bgcolor="#FF3399">25</td>
+<td width="30" align="center" bgcolor="#FF3399">34</td>
+</tr>
+<tr>
+<td width="30" align="center" bgcolor="#FFFF00"><b>4</b></td>
+<td width="170" align="center" bgcolor="#FFFF00"><b>Четверикъ</b></td>
+<td width="30" align="center" bgcolor="#FFFF00">4</td>
+<td width="30" align="center" bgcolor="#FFFF00">13</td>
+<td width="30" align="center" bgcolor="#FFFF00">22</td>
+<td width="30" align="center" bgcolor="#FFFF00">31</td>
+<td width="30" align="center" bgcolor="#FFFF00">40</td>
+<td width="30" align="center" bgcolor="#FFFF00">&nbsp;</td>
+<td width="30" align="center" bgcolor="#FFFF00">8</td>
+<td width="30" align="center" bgcolor="#FFFF00">17</td>
+<td width="30" align="center" bgcolor="#FFFF00">26</td>
+<td width="30" align="center" bgcolor="#FFFF00">35</td>
+</tr>
+<tr>
+<td width="30" align="center" bgcolor="#33CC33"><b>5</b></td>
+<td width="170" align="center" bgcolor="#33CC33"><b>Пятница</b></td>
+<td width="30" align="center" bgcolor="#33CC33">5</td>
+<td width="30" align="center" bgcolor="#33CC33">14</td>
+<td width="30" align="center" bgcolor="#33CC33">23</td>
+<td width="30" align="center" bgcolor="#33CC33">32</td>
+<td width="30" align="center" bgcolor="#33CC33">41</td>
+<td width="30" align="center" bgcolor="#33CC33">&nbsp;</td>
+<td width="30" align="center" bgcolor="#33CC33">9</td>
+<td width="30" align="center" bgcolor="#33CC33">18</td>
+<td width="30" align="center" bgcolor="#33CC33">27</td>
+<td width="30" align="center" bgcolor="#33CC33">36</td>
+</tr>
+<tr>
+<td width="30" align="center" bgcolor="#66CCFF"><b>6</b></td>
+<td width="170" align="center" bgcolor="#66CCFF"><b>Шестица</b></td>
+<td width="30" align="center" bgcolor="#66CCFF">6</td>
+<td width="30" align="center" bgcolor="#66CCFF">15</td>
+<td width="30" align="center" bgcolor="#66CCFF">24</td>
+<td width="30" align="center" bgcolor="#66CCFF">33</td>
+<td width="30" align="center" bgcolor="#66CCFF">&nbsp;</td>
+<td width="30" align="center" bgcolor="#66CCFF">1</td>
+<td width="30" align="center" bgcolor="#66CCFF">10</td>
+<td width="30" align="center" bgcolor="#66CCFF">19</td>
+<td width="30" align="center" bgcolor="#66CCFF">28</td>
+<td width="30" align="center" bgcolor="#66CCFF">37</td>
+</tr>
+<tr>
+<td width="30" align="center" bgcolor="#0000FF"><span style="color: #ffffff;"><b>7</b></span></td>
+<td width="170" align="center" bgcolor="#0000FF"><span style="color: #ffffff;"><b>Седьмица</b></span></td>
+<td width="30" align="center" bgcolor="#0000FF"><span style="color: #ffffff;">7</span></td>
+<td width="30" align="center" bgcolor="#0000FF"><span style="color: #ffffff;">16</span></td>
+<td width="30" align="center" bgcolor="#0000FF"><span style="color: #ffffff;">25</span></td>
+<td width="30" align="center" bgcolor="#0000FF"><span style="color: #ffffff;">34</span></td>
+<td width="30" align="center" bgcolor="#0000FF">&nbsp;</td>
+<td width="30" align="center" bgcolor="#0000FF"><span style="color: #ffffff;">2</span></td>
+<td width="30" align="center" bgcolor="#0000FF"><span style="color: #ffffff;">11</span></td>
+<td width="30" align="center" bgcolor="#0000FF"><span style="color: #ffffff;">20</span></td>
+<td width="30" align="center" bgcolor="#0000FF"><span style="color: #ffffff;">29</span></td>
+<td width="30" align="center" bgcolor="#0000FF"><span style="color: #ffffff;">38</span></td>
+</tr>
+<tr>
+<td width="30" align="center" bgcolor="#9933FF"><span style="color: #ffffff;"><b>8</b></span></td>
+<td width="170" align="center" bgcolor="#9933FF"><span style="color: #ffffff;"><b>Осьмица</b></span></td>
+<td width="30" align="center" bgcolor="#9933FF"><span style="color: #ffffff;">8</span></td>
+<td width="30" align="center" bgcolor="#9933FF"><span style="color: #ffffff;">17</span></td>
+<td width="30" align="center" bgcolor="#9933FF"><span style="color: #ffffff;">26</span></td>
+<td width="30" align="center" bgcolor="#9933FF"><span style="color: #ffffff;">35</span></td>
+<td width="30" align="center" bgcolor="#9933FF">&nbsp;</td>
+<td width="30" align="center" bgcolor="#9933FF"><span style="color: #ffffff;">3</span></td>
+<td width="30" align="center" bgcolor="#9933FF"><span style="color: #ffffff;">12</span></td>
+<td width="30" align="center" bgcolor="#9933FF"><span style="color: #ffffff;">21</span></td>
+<td width="30" align="center" bgcolor="#9933FF"><span style="color: #ffffff;">30</span></td>
+<td width="30" align="center" bgcolor="#9933FF"><span style="color: #ffffff;">39</span></td>
+</tr>
+<tr>
+<td width="30" align="center" bgcolor="#FFFFFF"><b>9</b></td>
+<td width="170" align="center" bgcolor="#FFFFFF"><b>Неделя</b></td>
+<td width="30" align="center" bgcolor="#FFFFFF">9</td>
+<td width="30" align="center" bgcolor="#FFFFFF">18</td>
+<td width="30" align="center" bgcolor="#FFFFFF">27</td>
+<td width="30" align="center" bgcolor="#FFFFFF">36</td>
+<td width="30" align="center" bgcolor="#FFFFFF">&nbsp;</td>
+<td width="30" align="center" bgcolor="#FFFFFF">4</td>
+<td width="30" align="center" bgcolor="#FFFFFF">13</td>
+<td width="30" align="center" bgcolor="#FFFFFF">22</td>
+<td width="30" align="center" bgcolor="#FFFFFF">31</td>
+<td width="30" align="center" bgcolor="#FFFFFF">40</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p align="justify">Это было очень удобно, все нечетные месяца Простого Лета начинались с одного дня недели, а всё чётные с другого. А так как Священное Лето состоит из 41 недели, то и следующий Круг Жизни, начинался с того же дня недели, что и Священное Лето. Таким образом, каждый Круг Жизни, т.е. цикл из 144 лет, начинался с Понедельника.</p>
+<div align="center">
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse;" bordercolor="#111111" width="436">
+<tbody>
+<tr>
+<td width="436" colspan="3" align="center" height="22">
+<p align="center"><b> <a name="НазванияСороковников"></a>Названия Сороковников</b></p>
+</td>
+</tr>
+<tr>
+<td width="27" align="center" height="22">1</td>
+<td width="93" align="center" height="22"><b>Рамхатъ</b></td>
+<td width="316" height="22">Сороковник Божественного Начала</td>
+</tr>
+<tr>
+<td width="27" align="center" height="22">2</td>
+<td width="93" align="center" height="22"><b>Айлѣтъ</b></td>
+<td width="316" height="22">Сороковник Новых Даров</td>
+</tr>
+<tr>
+<td width="27" align="center" height="22">3</td>
+<td width="93" align="center" height="22"><b>Бейлѣтъ</b></td>
+<td width="316" height="22">Сороковник Белого Сияния и Покоя Мира</td>
+</tr>
+<tr>
+<td width="27" align="center" height="22">4</td>
+<td width="93" align="center" height="22"><b>Гэйлѣтъ</b></td>
+<td width="316" height="22">Сороковник Вьюг и Стужи</td>
+</tr>
+<tr>
+<td width="27" align="center" height="22">5</td>
+<td width="93" align="center" height="22"><b>Дайлѣтъ</b></td>
+<td width="316" height="22">Сороковник Пробуждения Природы</td>
+</tr>
+<tr>
+<td width="27" align="center" height="22">6</td>
+<td width="93" align="center" height="22"><b>Элѣтъ</b></td>
+<td width="316" height="22">Сороковник Посева и Наречения</td>
+</tr>
+<tr>
+<td width="27" align="center" height="22">7</td>
+<td width="93" align="center" height="22"><b>Вэйлѣтъ</b></td>
+<td width="316" height="22">Сороковник Ветров</td>
+</tr>
+<tr>
+<td width="27" align="center" height="1">8</td>
+<td width="93" align="center" height="1"><b>Хейлѣтъ</b></td>
+<td width="316" height="1">Сороковник Получения Даров Природы</td>
+</tr>
+<tr>
+<td width="27" align="center" height="22">9</td>
+<td width="93" align="center" height="22"><b>Тайлѣтъ</b></td>
+<td width="316" height="22">Сороковник Завершения</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p align="justify">Название месяцев не только в Рунике имели глубокий смысл, но и в Буквице тоже. По своей совокупности Образы Буквиц, с которых начинались названия Сороковников, тоже несли особый смысл. Чтобы хоть как-то его понять, нужно просто вспомнить названия Буквиц в Древлесловенской письменности и что они означают: <b>Р</b> ‒ Реци, ‒ наставлять, сообщать; <b>А</b> ‒ Азъ, ‒ человек, людина; <b>Б</b> ‒ Боги; <b>Г</b> ‒ Глаголь, ‒ говорить; <b>Д</b> ‒ Добро; <b>Э</b> ‒ Эта, ‒ указующая форма; <b>В</b> ‒ Веди, ‒ Веды, мудрость, знание; <b>Х</b> ‒ Хранъ, ‒ сохранение; <b>Т</b> ‒ Твердо, ‒ завершение, окончательная форма. Соединив данные Образы буквиц, мы получаем следующий текст: <span style="color: navy;"> <b> Наставляли человека Боги, говоря доброе, эту Мудрость сохранять твёрдо.<br /> </b> </span> <span style="color: #9999ff;"> <b>Неделя</b></span> = 9 <span style="color: #9933ff;"> <b>Суток</b></span>, которые несли числовую форму и назывались:</p>
+<div align="center">
+<table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse;" bordercolor="#111111" width="750">
+<tbody>
+<tr>
+<td width="20"><b>№</b></td>
+<td width="113"><b>Название дня</b></td>
+<td width="167"><b>День</b></td>
+<td width="230"><b>Покровитель</b></td>
+<td width="120"><b>Этимология</b></td>
+</tr>
+<tr>
+<td width="20">1</td>
+<td width="113"><b>Понедельникъ</b></td>
+<td width="167">день труда</td>
+<td width="230">Земля Хорса (Меркурий)</td>
+<td width="120">ПОсле Недели</td>
+</tr>
+<tr>
+<td width="20">2</td>
+<td width="113"><b>Вторникъ</b></td>
+<td width="167">день труда</td>
+<td width="230">Земля Орея (Марс)</td>
+<td width="120">ВТОРой</td>
+</tr>
+<tr>
+<td width="20">3</td>
+<td width="113"><b>Третейникъ</b></td>
+<td width="167">день отдыха</td>
+<td width="230">Земля Перуна (Юпитер)</td>
+<td width="120">ТРЕТий</td>
+</tr>
+<tr>
+<td width="20">4</td>
+<td width="113"><b>Четверикъ</b></td>
+<td width="167">день труда</td>
+<td width="230">Земля Варуны (Уран)</td>
+<td width="120">ЧЕТВЕРтый</td>
+</tr>
+<tr>
+<td width="20">5</td>
+<td width="113"><b>Пятница</b></td>
+<td width="167">день труда</td>
+<td width="230">Земля Индры (Хирон)</td>
+<td width="120">ПЯТый</td>
+</tr>
+<tr>
+<td width="20">6</td>
+<td width="113"><b>Шестица</b></td>
+<td width="167">день отдыха</td>
+<td width="230">Земля Стрибога (Сатурн)</td>
+<td width="120">ШЕСТой</td>
+</tr>
+<tr>
+<td width="20">7</td>
+<td width="113"><b>Седьмица</b></td>
+<td width="167">день отдыха, пост</td>
+<td width="230">Земля Деи (пояс астероидов)</td>
+<td width="120">СЕДЬмой</td>
+</tr>
+<tr>
+<td width="20">8</td>
+<td width="113"><b>Осьмица</b></td>
+<td width="167">день труда</td>
+<td width="230">Земля Зари-Мерцаны (Венера)</td>
+<td width="120">ОСЬ МИра</td>
+</tr>
+<tr>
+<td width="20">9</td>
+<td width="113"><b>Неделя</b></td>
+<td width="167">день гостей</td>
+<td width="230">Ярило-Солнце</td>
+<td width="120">НЕт ДЕЛ</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p align="center"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/simvol.gif" rel="lightbox"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/simvol_.gif" class="img-rounded" /></a></p>
+<p align="justify">Пояснение рисунка: на внешней стороне дни недели (не указаны) и их покровители. За углами треугольника три луны: <a href="#ЛетоотВеликогоПереселенияизДаарии">Леля</a>, <a href="#ЛетоотВеликойСтужи">Фатта</a> и Месяц. В центре треугольника символ Мидгард-Земли. День недели, в который ты родился для тебя счастливый.</p>
+<p align="justify">О девятидневной неделе помнили еще не так давно, мы можем убедиться, прочитав сказки сибирского сказителя Петра Павловича Ершова:</p>
+<p align="center">Ну, Гаврило, в ту <b>седьмицу</b><br /> Отведем-ка их в столицу;<br /> Там боярам продадим,<br /> Деньги ровно поделим.<br /> <i>(Конек-Горбунок )</i><br /> <br /> Вот <b>осьмица</b> уж прошла <br /> и <b>неделя</b> подошла.<br /> <i>(Каменная чаша)</i></p>
+<table cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td background="../img/usor.gif" height="15"><span size="1" face="Arial" style="font-family: Arial; font-size: xx-small;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p align="center"><b><a href="ha-tha.php?str=vedy/vremya" name="СлавянскиеМерыВремени">Славянские меры времени</a></b></p>
+<p align="justify" style="text-align: center;"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/4chasi.gif" class="img-rounded" /></p>
+<p align="justify"><span style="color: #9933ff;"><b><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/runy/sutki.gif" class="img-rounded" /> Сутки</b></span> = 16 <span style="color: #cc33ff;"> <b>Часов</b></span>. Славяно-Арийские сутки начинаются в 18 григорианских часов (по зимнему и в 19 часов по летнему времени). Т.к. 1,5 миллиарда Лѣт тому назад наши Предки в это время суток приземлились на <b>Мидгард-Землю</b>. С этого момента пошёл отчет времени и это запечатлелось в поговорках: "с вечера до вечера", "долог день до вечера, когда делать нечего", "утро вечера мудреней", вечером говорят "вот и день прошёл", "день и ночь &ndash; сутки прочь", т.е. день переходит в ночь ‒ сутки закончились с заходом солнца. В некоторых странах эта традиция до сих пор соблюдается. Кстати слово "сутки" от глагола ткать, тыкать. Сутки ‒ это стык, стечение дня и ночи, их соединение; сутки сотканы из дня и ночи. Это слово, кроме русского, есть ещё в некоторых языках (например, в болгарском сутки ‒ "денонощие").</p>
+<p align="justify"><span style="color: #cc0099;"><b>Час</b></span> равен 1&frac12; григорианскому. <a name="КаждыйЧасимееnсвоёназвание"></a>Каждый <span style="color: #cc0099;"><b>Час</b></span> имеет своё название:</p>
+<div align="center">
+<table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse;" bordercolor="#111111" width="806">
+<tbody>
+<tr>
+<td width="789" colspan="6" bgcolor="#FFFFFF">
+<p align="center"><b>Славянские сутки</b></p>
+</td>
+</tr>
+<tr>
+<td width="204" align="center" rowspan="2" bgcolor="#FFFFFF">Черты&nbsp;и&nbsp;резы&nbsp;|&nbsp;Руны&nbsp;|&nbsp;Час</td>
+<td width="98" rowspan="2" align="center" bgcolor="#FFFFFF">Название</td>
+<td width="266" rowspan="2" align="center" bgcolor="#FFFFFF">Расшифровка</td>
+<td width="169" colspan="2" align="center" bgcolor="#FFFFFF">
+<p align="center">Современное время</p>
+</td>
+<td width="51" rowspan="2" bgcolor="#FFFFFF">&nbsp;</td>
+</tr>
+<tr>
+<td width="84" align="center" bgcolor="#FFFFFF">зимнее</td>
+<td width="83" align="center" bgcolor="#FFFFFF">летнее</td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/16.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Поудани</td>
+<td width="266" bgcolor="#FFFFFF">завершённый день</td>
+<td width="84" bgcolor="#FFFFFF">18:00-19:30</td>
+<td width="83" bgcolor="#FFFFFF">19:00-20:30</td>
+<td width="51" rowspan="4" bgcolor="#FFFFFF"><span style="color: #0099cc;"><b>Вечер</b></span></td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/1.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Паобѣдъ</td>
+<td width="266" bgcolor="#FFFFFF">начало нового дня</td>
+<td width="84" bgcolor="#FFFFFF">19:30-21:00</td>
+<td width="83" bgcolor="#FFFFFF">20:30-22:00</td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/2.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Вѣчиръ</td>
+<td width="266" bgcolor="#FFFFFF">появление звёздной росы на Небесах</td>
+<td width="84" bgcolor="#FFFFFF">21:00-22:30</td>
+<td width="83" bgcolor="#FFFFFF">22:00-23:30</td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/3.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Ничь</td>
+<td width="266" bgcolor="#FFFFFF">нечётное время 3-х Лун</td>
+<td width="84" bgcolor="#FFFFFF">22:30-24:00</td>
+<td width="83" bgcolor="#FFFFFF">23:30-01:00</td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/4.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Полничь</td>
+<td width="266" bgcolor="#FFFFFF">полный путь Лун</td>
+<td width="84" bgcolor="#FFFFFF">24:00-01:30</td>
+<td width="83" bgcolor="#FFFFFF">01:00-02:30</td>
+<td width="51" rowspan="4" bgcolor="#FFFFFF"><span style="color: #0000ff;"><b>Ночь</b></span></td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/5.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Заутра</td>
+<td width="266" bgcolor="#FFFFFF">звёздное утешение росы</td>
+<td width="84" bgcolor="#FFFFFF">01:30-03:00</td>
+<td width="83" bgcolor="#FFFFFF">02:30-04:00</td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/6.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Заура</td>
+<td width="266" bgcolor="#FFFFFF">звёздное сияние, заря</td>
+<td width="84" bgcolor="#FFFFFF">03:00-04:30</td>
+<td width="83" bgcolor="#FFFFFF">04:00-05:30</td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/7.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Заурнице</td>
+<td width="266" bgcolor="#FFFFFF">окончание звёздного сияния</td>
+<td width="84" bgcolor="#FFFFFF">04:30-06:00</td>
+<td width="83" bgcolor="#FFFFFF">05:30-07:00</td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/8.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Настя</td>
+<td width="266" bgcolor="#FFFFFF">утренняя роса</td>
+<td width="84" bgcolor="#FFFFFF">06:00-07:30</td>
+<td width="83" bgcolor="#FFFFFF">07:00-08:30</td>
+<td width="51" rowspan="4" bgcolor="#FFFFFF"><span style="color: #ff6600;"><b>Утро</b></span></td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/9.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Сваор</td>
+<td width="266" bgcolor="#FFFFFF">восход Солнца</td>
+<td width="84" bgcolor="#FFFFFF">07:30-09:00</td>
+<td width="83" bgcolor="#FFFFFF">08:30-10:00</td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/10.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Утрось</td>
+<td width="266" bgcolor="#FFFFFF">успокоение росы</td>
+<td width="84" bgcolor="#FFFFFF">09:00-10:30</td>
+<td width="83" bgcolor="#FFFFFF">10:00-11:30</td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/11.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Поутрось</td>
+<td width="266" bgcolor="#FFFFFF">путь собирания успокоенной росы</td>
+<td width="84" bgcolor="#FFFFFF">10:30-12:00</td>
+<td width="83" bgcolor="#FFFFFF">11:30-13:00</td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/12.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Обестина</td>
+<td width="266" bgcolor="#FFFFFF">обедня, совместное собрание</td>
+<td width="84" bgcolor="#FFFFFF">12:00-13:30</td>
+<td width="83" bgcolor="#FFFFFF">13:00-14:30</td>
+<td width="51" rowspan="4" bgcolor="#FFFFFF"><span style="color: #ff0000;"><b>День</b></span></td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/13.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Обед (обесть)</td>
+<td width="266" bgcolor="#FFFFFF">трапеза</td>
+<td width="84" bgcolor="#FFFFFF">13:30-15:00</td>
+<td width="83" bgcolor="#FFFFFF">14:30-16:00</td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/14.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Подани</td>
+<td width="266" bgcolor="#FFFFFF">отдых после трапезы</td>
+<td width="84" bgcolor="#FFFFFF">15:00-16:30</td>
+<td width="83" bgcolor="#FFFFFF">16:00-17:30</td>
+</tr>
+<tr>
+<td width="204" align="center" bgcolor="#FFFFFF"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/4as/15.gif" class="img-rounded" /></td>
+<td width="98" bgcolor="#FFFFFF">Утдайни</td>
+<td width="266" bgcolor="#FFFFFF">время окончания деяний</td>
+<td width="84" bgcolor="#FFFFFF">16:30-18:00</td>
+<td width="83" bgcolor="#FFFFFF">17:30-19:00</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p align="justify"><b><span style="color: #cc33ff;"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/runy/chas.gif" class="img-rounded" /><a name="Час"></a>Час</span> </b>= 144 <span style="color: #cc0099;"> <b>Части</b></span> (= 90 минут).<span style="color: #cc0099;"><br /> <b><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/runy/chast.gif" class="img-rounded" />Часть</b></span> = 1 296 <span style="color: #990099;"> <b>Долей</b></span> (= 37,56 секунд).<br /> <span style="color: #990099;"><b><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/runy/dolya.gif" class="img-rounded" /> Доля</b></span> = 72<b><span style="color: #993366;"> Мгновений</span></b> (1сек.= 34,5 доли).<br /> <b><span style="color: #993366;"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/runy/mgnovenie.gif" class="img-rounded" /> <a name="Мгновение"></a>Мгновение</span></b> = 760 <b><span style="color: #cc0000;">Мигов</span></b> (1сек.= 2484,34 мгн).<br /> <b><span style="color: #cc0000;"> <img src="http://energodar.net/modules/blog/ha-tha/vedy/img/runy/mig.gif" class="img-rounded" /> <a name="Миг"></a>Миг </span></b>= 160 <span style="color: #800000;"><b>Сигов</b></span> (1сек.=1888102,236 мигов). Отсюда произошло слово &laquo;сигануть&raquo;, т. е. очень-очень быстро переместиться.<br /> <span style="color: #800000;"><b> <img src="http://energodar.net/modules/blog/ha-tha/vedy/img/runy/sig.gif" class="img-rounded" /> Сиг</b></span> = 14000 <b>Сантигов</b> (1 сек.=302096358 сигов). 1 сиг примерно равен 30 колебаниям электромагнитной волны атома цезия, взятого за основу для современных атомных часов.</p>
+<table cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td background="../img/usor.gif" height="15"><span size="1" face="Arial" style="font-family: Arial; font-size: xx-small;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p align="center"><b><a name="ЩитЧислобога"></a>Щит Числобога</b></p>
+<p align="center"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/kalendar_.jpg" class="img-rounded" /></p>
+<p align="justify">На изображении Сварожьего Круга (<a href="http://energodar.net/modules/blog/ha-tha/vedy/img/kalendar.gif" rel="lightbox">Щит Числобога</a>) на внешнем круге гравюры видно Покровителей Чертогов. На втором круге, от внешнего края, показаны часы времени: <b>Суточный Круг</b>, в котором 16 часов, по 4 часа на каждое время суток: 4 часа на Вечер, 4 часа на Ночь, 4 часа на Утро и 4 часа на День. Каждый час имеет своё собственное <a href="#КаждыйЧасимееnсвоёназвание">название</a>, чертовое (Черты и Резы) изображение и Руническое написание.<br /> <br /> В следующем Круге изображены Руны 16-и Небесных Чертогов, их начертание имеет определённую связь с расположением звезд на Небосводе и с Природными стихиями. Поэтому очень часто эти Руны помещались на оберегах. Не только на тех, которые носили люди, но и на оберегах защищающих домашний скот и птицу. Кроме того, данные обереги можно встретить на посуде и на другой домашней утвари.<br /> <br /> Следующий круг, называют <b>Кругом Стихий</b>, в нем обозначены 9 Стихий, через которые проходит время жизни. Каждой Стихии дано своё название и своя Руна Порядка: 1. <b>Земля</b>, 2. <b>Звезда, </b>3. <b>Огонь, </b>4. <b>Солнце, </b>5. <b>Древо, </b>6. <b> Небеса,</b> 7. <b>Океан,</b> 8. <b>Луна, </b>9. <b>Бог.</b><br /> <br /> Каждое Лѣто, так или иначе <a href="http://azhur-ot-scarlet.com" target="_blank">связано</a> с <b>Кругом Стихий</b>, поэтому зная стихийные характеристики, можно знать, чего ожидать от того или иного Лѣта (года).<br /> <br /> Следующим шел <b>Недельный Круг</b>. По нему определяли не только порядковый номер дня недели, но и кто из Богов данному дню покровительствует, а также какая из Девяти Земель системы Ярилы-Солнца&nbsp; даёт свою силу.<br /> <br /> В самом центре, в Круге ‒ структурное обозначение человека. 9 точек, указывали на 9 основных энергетических центров (чакр) человека, через которые он получает различные потоки силы жизни. На 9 видов сознания человека, на 9 различных чувств, которые даны человеку и многое другое.</p>
+<table cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td background="../img/usor.gif" height="15"><span size="1" face="Arial" style="font-family: Arial; font-size: xx-small;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p align="center"><b><a name="Расчёты"></a>Расчёты</b></p>
+<p align="justify"><b>Новолѣтие</b> приходится на 1 день второго месяца Оусени, т.е. на День Осеннего Равноденствия. Это как правило связывают с тем, что весь урожай был собран, закрома наполнены, и новое Лѣто начиналось с полного достатка. Кроме того, самые важные события было принято принимать именно в Новолетие.</p>
+<p align="justify">Так, например, мирный договор с Великим Драконом (древним Китаем) был подписан именно в Новолѣтие. Это было очень удобно для введения новой точки отсчета мирной жизни, при чём, на основной календарной системе это никак не отражалось. Ведь Сотворение Мира (между народами), произошло в 1 день 1 месяца Лѣта 5500 от <b> <a href="#ЛетоотВеликойСтужи">Великой Стужи</a></b>.</p>
+<p align="justify">Таким образом, 1 день 1 месяца Лѣта 5501 от Великой Стужи одновременно стал и 1 днём 1 месяца Лѣта 1 от Сотворение Мира, а так как мирный договор был подписан в Лѣто, носящее название Звездного Храма на Круголете Числобога, то и название нового Лѣтоисчисления стало ‒ от<b> <a href="#ЛетоСМЗХ">Сотворения Мира в Звездном Храме</a></b> (СМЗХ).</p>
+<p align="justify"><b>Рассчитаем </b> всем известную дату расстрела здания Верховного Совета РСФСР ‒ сентябрь-октябрь 1993 на Славяно-Арийский манер. Данные события произошли на стыке двух Лѣт, т.е. события и сущность одного Лѣта повлияли на события последующего Лѣта. Поэтому, чтобы узнать причины событий, необходимо узнать сущность обоих Лет: (1993+5508)&ndash;7376=125 и (1993+5509)&ndash;7376=126. По таблице ДКЧ: 125 ‒ Белый Пес. 13 простое Лѣто. Сущность данного Лѣта: "Лѣто псевдореформ, которые проводятся на словах, а не на деле (в народе говорят: "Собака лает ветер носит"). В это Лѣто, тёмные силы пытаются всячески расшатать экономику и уничтожить средства производства, особенно сельское хозяйство. Но, как правило, все эти неблаговидные дела поднимают народ на восстание против тёмных сил, ибо народу нужна стабильность, а не пустые разговоры правителей". 126 ‒ Белый Тур. 14 простое Лѣто. Сущность данного Лѣта: "Лѣто народных выступлений против тирании тёмных сил. В это Лѣто, как правило, проливается очень много Крови невинных людей, и совершаются ритуальные убийства, с человеческими жертвоприношениями".</p>
+<p align="justify">Реальные происходившие события соответствовали сущности Лѣт Круголѣта Числобога. До 19 сентября противоборство между ветвями власти происходили на уровне словесных взаимообвинений. Но вот, 125 Лѣто сменяет 126, наступило 20 сентября и противостоящие стороны перешли от слов к действиям. Президент издает знаменитый указ № 1400, распускает Верховный Совет, а последний в свою очередь объявляет об отстранении от должности президента и о том, что вся власть в стране переходит в руки вице-президента. Словесная борьба между двумя ветвями власти, перешла в вооруженный Конфликт, в результате которого погибли невинные мирные граждане у телецентра Останкино, а также было расстреляно из танков и БТРов здание Верховного Совета.</p>
+<p align="justify">Лета Тура наступают каждые 16 лет. Эти Лѣта указывают на то, что в эти периоды тёмные силы, проникающие во власть, проливают Кровь невинных людей.</p>
+<p align="justify"><b>Рассчитаем</b>, например, Дни рождения. Для получения <a href="#ЛетоСМЗХ">Летоисчислѣния от СМЗХ</a> прибавьте к своему году рождения 5508 или 5509, если родились после осеннего дня равноденствия. Теперь рассчитаем<b>, </b>в каком Круголѣте человек родился, отняв от прошлых вычислений 7376. Пример: (1979+5508)&ndash;7376=111. Теперь по <a href="#ДКЧ">таблице ДКЧ</a> найдём, что это Лѣто "Звёздного Дома", 15 Лѣто в Круголѣте. Ещё пример: (1981+5508)&ndash;7376=113 &ndash; это Лѣто "Огненного Пути", 1 Лѣто в Круголѣте.</p>
+<p align="justify">Далее по таблице соответствия вы можете узнать месяц вашего рождения:</p>
+<div align="center">
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse;" bordercolor="#111111" width="700" height="273">
+<tbody>
+<tr>
+<td width="100%" colspan="10" height="44">
+<p align="center"><b><a id="ancor"></a>Соответствие дней Григорианского календаря<br /> <a id="ancor"></a>на начало каждого месяца Славяно-Арийского календаря</b></p>
+</td>
+</tr>
+<tr>
+<td width="28%" colspan="2" align="center" height="22"><b>Сороковник / Круголѣт</b></td>
+<td width="9%" align="center" height="22"><b>1 &ndash; 3</b></td>
+<td width="9%" align="center" height="22"><b>4</b></td>
+<td width="9%" align="center" height="22"><b>5 &ndash; 7</b></td>
+<td width="9%" align="center" height="22"><b>8</b></td>
+<td width="9%" align="center" height="22"><b>9 &ndash; 11</b></td>
+<td width="9%" align="center" height="22"><b>12</b></td>
+<td width="9%" align="center" height="22"><b>13 &ndash; 15</b></td>
+<td width="9%" align="center" height="22"><span style="color: #ff00ff;"><b>16</b></span></td>
+</tr>
+<tr>
+<td width="6%" align="center" height="21"><b>1</b></td>
+<td width="22%" align="center" height="21"><b>Рамхатъ</b></td>
+<td width="9%" align="center" height="21">23.09</td>
+<td width="9%" align="center" height="21">23.09</td>
+<td width="9%" align="center" height="21">22.09</td>
+<td width="9%" align="center" height="21">22.09</td>
+<td width="9%" align="center" height="21">21.09</td>
+<td width="9%" align="center" height="21">21.09</td>
+<td width="9%" align="center" height="21">20.09</td>
+<td width="9%" align="center" height="21">20.09</td>
+</tr>
+<tr>
+<td width="6%" align="center" height="22"><b>2</b></td>
+<td width="22%" align="center" height="22"><b>Айлетъ</b></td>
+<td width="9%" align="center" height="22">03.11</td>
+<td width="9%" align="center" height="22">03.11</td>
+<td width="9%" align="center" height="22">02.11</td>
+<td width="9%" align="center" height="22">02.11</td>
+<td width="9%" align="center" height="22">01.11</td>
+<td width="9%" align="center" height="22">01.11</td>
+<td width="9%" align="center" height="22">31.10</td>
+<td width="9%" align="center" height="22">31.10</td>
+</tr>
+<tr>
+<td width="6%" align="center" height="22"><b>3</b></td>
+<td width="22%" align="center" height="22"><b>Бейлетъ</b></td>
+<td width="9%" align="center" height="22">13.12</td>
+<td width="9%" align="center" height="22">13.12</td>
+<td width="9%" align="center" height="22">12.12</td>
+<td width="9%" align="center" height="22">12.12</td>
+<td width="9%" align="center" height="22">11.12</td>
+<td width="9%" align="center" height="22">11.12</td>
+<td width="9%" align="center" height="22">10.12</td>
+<td width="9%" align="center" height="22">11.12</td>
+</tr>
+<tr>
+<td width="6%" align="center" height="22"><b>4</b></td>
+<td width="22%" align="center" height="22"><b>Гэйлетъ</b></td>
+<td width="9%" align="center" height="22">23.01</td>
+<td width="9%" align="center" height="22">23.01</td>
+<td width="9%" align="center" height="22">22.01</td>
+<td width="9%" align="center" height="22">22.01</td>
+<td width="9%" align="center" height="22">21.01</td>
+<td width="9%" align="center" height="22">21.01</td>
+<td width="9%" align="center" height="22">20.01</td>
+<td width="9%" align="center" height="22">21.01</td>
+</tr>
+<tr>
+<td width="6%" align="center" height="22"><b>5</b></td>
+<td width="22%" align="center" height="22"><b>Дайлетъ</b></td>
+<td width="9%" align="center" height="22">04.03</td>
+<td width="9%" align="center" height="22">03.03</td>
+<td width="9%" align="center" height="22">03.03</td>
+<td width="9%" align="center" height="22">02.03</td>
+<td width="9%" align="center" height="22">02.03</td>
+<td width="9%" align="center" height="22">01.03</td>
+<td width="9%" align="center" height="22">01.03</td>
+<td width="9%" align="center" height="22">02.03</td>
+</tr>
+<tr>
+<td width="6%" align="center" height="22"><b>6</b></td>
+<td width="22%" align="center" height="22"><b>Элетъ</b></td>
+<td width="9%" align="center" height="22">14.04</td>
+<td width="9%" align="center" height="22">13.04</td>
+<td width="9%" align="center" height="22">13.04</td>
+<td width="9%" align="center" height="22">12.04</td>
+<td width="9%" align="center" height="22">12.04</td>
+<td width="9%" align="center" height="22">11.04</td>
+<td width="9%" align="center" height="22">11.04</td>
+<td width="9%" align="center" height="22">12.04</td>
+</tr>
+<tr>
+<td width="6%" align="center" height="22"><b>7</b></td>
+<td width="22%" align="center" height="22"><b>Вэйлетъ</b></td>
+<td width="9%" align="center" height="22">24.05</td>
+<td width="9%" align="center" height="22">23.05</td>
+<td width="9%" align="center" height="22">23.05</td>
+<td width="9%" align="center" height="22">22.05</td>
+<td width="9%" align="center" height="22">22.05</td>
+<td width="9%" align="center" height="22">21.05</td>
+<td width="9%" align="center" height="22">21.05</td>
+<td width="9%" align="center" height="22">23.05</td>
+</tr>
+<tr>
+<td width="6%" align="center" height="22"><b>8</b></td>
+<td width="22%" align="center" height="22"><b>Хейлетъ</b></td>
+<td width="9%" align="center" height="22">04.07</td>
+<td width="9%" align="center" height="22">03.07</td>
+<td width="9%" align="center" height="22">03.07</td>
+<td width="9%" align="center" height="22">02.07</td>
+<td width="9%" align="center" height="22">02.07</td>
+<td width="9%" align="center" height="22">01.07</td>
+<td width="9%" align="center" height="22">01.07</td>
+<td width="9%" align="center" height="22">03.07</td>
+</tr>
+<tr>
+<td width="6%" align="center" height="22"><b>9</b></td>
+<td width="22%" align="center" height="22"><b>Тайлетъ</b></td>
+<td width="9%" align="center" height="22">13.08</td>
+<td width="9%" align="center" height="22">12.08</td>
+<td width="9%" align="center" height="22">12.08</td>
+<td width="9%" align="center" height="22">11.08</td>
+<td width="9%" align="center" height="22">11.08</td>
+<td width="9%" align="center" height="22">10.08</td>
+<td width="9%" align="center" height="22">10.08</td>
+<td width="9%" align="center" height="22">13.08</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p align="justify">Например, для 15 мая 1979 (15.05.1979): ( 1979 + 5508 ) &ndash; 7376 = 111. <b> <span style="color: #800000;">111</span></b> &ndash; это <b><span style="color: #008000;">15</span></b> (простое) Лѣто в <a href="#ДКЧ">таблице ДКЧ</a>. Теперь в столбце 13-<b><span style="color: #008000;">15</span></b> ищем на какой месяц попадает 15.05: <a href="#НазванияСороковников">шестой месяц Элетъ</a>, который с 11.04 по 21.05, т.е. День рождения высчитываем так: 11.04 (11 апреля) = 01.06 (1 Элеть), 12.04 = 02.06, 13.04 = 03.06, ... , 15.05 = 35.06 (35 Элетъ). Характеристики <a href="ha-tha.php?str=vedy/sorokov">35</a> числа из <a href="ha-tha.php?str=vedy/sorokov#6-4" target="_blank">4-ой четверти месяца</a> можно посмотреть <a href="ha-tha.php?str=vedy/sorokov">здесь</a>.</p>
+<p align="justify">Второй пример, для 22 апреля 1981 (22.04.1981): ( 1981 + 5508 ) &ndash; 7376 = 113. <b><span style="color: #800000;">113</span></b> &ndash; это <span style="color: #008000;"><b>1</b></span> (простое) Лѣто в <a href="#ДКЧ">таблице ДКЧ</a>. Теперь в столбце <span style="color: #008000;"><b>1</b></span>-3 ищем на какой месяц попадает 22.04: <a href="#НазванияСороковников">шестой месяц Элетъ</a>, который с 14.04 по 24.05. День рождения высчитываем так: 14.04 (14 апреля) = 01.06 (1 Элеть), 15.04 = 02.06, 16.04 = 03.06, ... , 22.04 = 09.06 (9 Элетъ). Характеристики <a href="ha-tha.php?str=vedy/sorokov">9</a> числа из <a href="ha-tha.php?str=vedy/sorokov#6-1" target="_blank">1-ой четверти месяца</a> можно посмотреть <a href="ha-tha.php?str=vedy/sorokov">здесь</a>.</p>
+<p align="justify">Примечание: Если вы родились после 18 часов (по зимнему или после 19 часов по летнему времени), то к расчетам нужно прибавить один день, т.к. новые Славяно-Арийские сутки начинаются в это время.</p>
+<p align="justify">Примечание: Летнее время ввели с 1 апреля 1981 года.</p>
+<p align="justify">Чтобы узнать в каком Чертоге родились, воспользуйтесь таблицей <span style="color: #6600cc;"><b><a href="#СварожийКруг">Сварожьего Круга</a></b></span>.</p>
+<p align="justify">Примечание: Если День рождения попадает на "пограничный" день, то помнить, что смена Чертогов происходит в 14 часов (по современному: в 15 часов по зимнему и 16 часов по летнему времени).</p>
+<p align="justify">Для первого примера: 35 Элетъ ‒ Чертог <b> <a href="http://energodar.net/modules/blog/ha-tha/vedy/ha-tha.php?str=vedy/sva_krug#12" target="_blank">Лося</a>. </b> Оберег: руна Чертога вписанного в звезду Инглии: <a href="img/obereg/12.jpg" rel="lightbox">Рис</a>. Для второго примера: 9 Элетъ ‒ Чертог <b> <a href="http://energodar.net/modules/blog/ha-tha/vedy/ha-tha.php?str=vedy/sva_krug#11" target="_blank">Тура</a></b>. Оберег: руна Чертога вписанного в звезду Инглии: <a href="img/obereg/11.jpg" rel="lightbox">Рис</a>. Также оберег Лета рождения, месяца рождения, дня недели рождения покровительствует и помогают.</p>
+<p align="justify">Определим, с какого дня недели началось <b><span style="color: #800000;">111</span></b> Лѣто (для примера 1) и <b><span style="color: #800000;">113</span></b> Лѣто (для примера 2). Воспользуемся таблицей:</p>
+<div align="center">
+<table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse;" bordercolor="#111111">
+<tbody>
+<tr>
+<td align="center" colspan="2"><b>Дни недели Новолѣтий</b></td>
+</tr>
+<tr>
+<td align="center"><b>День Недели</b></td>
+<td align="center"><b>Лѣто в Круголѣте</b></td>
+</tr>
+<tr>
+<td>Понедельникъ</td>
+<td>1, 10, 20, 29, 39, 48, 49, 58, 68, 77, 87, 96, 106, 116, 125, 135, 144</td>
+</tr>
+<tr>
+<td>Вторникъ</td>
+<td>3, 12, 22, 31, 41, 51, 60, 70, 79, 89, 99, 108, 118, 127, 137</td>
+</tr>
+<tr>
+<td>Тритейникъ</td>
+<td>5, 14, 24, 34, 43, 53, 62, 72, 82, 91, 97, 101, 110, 120, 130, 139</td>
+</tr>
+<tr>
+<td>Четверикъ</td>
+<td>7, 16, 17, 26, 36, 45, 55, 64, 65, 74, 84, 93, 103, 112, 113, 122, 132, 141</td>
+</tr>
+<tr>
+<td>Пятница</td>
+<td>9, 19, 28, 38, 47, 57, 67, 76, 86, 95, 105, 115, 124, 134, 143</td>
+</tr>
+<tr>
+<td>Шестица</td>
+<td>2, 11, 21, 30, 40, 50, 59, 69, 78, 88, 98, 107, 117, 126, 136</td>
+</tr>
+<tr>
+<td>Седьмица</td>
+<td>4, 13, 23, 32, 33, 42, 52, 61, 71, 80, 81, 90, 100, 109, 119, 128, 129, 138</td>
+</tr>
+<tr>
+<td>Осьмица</td>
+<td>6, 15, 25, 35, 44, 54, 63, 73, 83, 92, 102, 111, 121, 131, 140</td>
+</tr>
+<tr>
+<td>Неделя</td>
+<td>8, 18, 27, 37, 46, 56, 66, 75, 85, 94, 104, 114, 123, 133, 142</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p align="justify">Незабываем, что если первый <a href="#Сороковник">Сороковник</a> Лѣта начинается в Понедельник, то и все остальные нечётные Сороковники будут начинаться в Понедельник, а чётные &mdash; в Шестицу. Если во Вторник, то нечётные во Вторник, а чётные &mdash; в Седмицу и т.д:</p>
+<div align="center">
+<table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse;" bordercolor="#111111" id="table2">
+<tbody>
+<tr>
+<td align="center"><b>Нечётные месяцы</b></td>
+<td align="center"><b>Чётные месяцы</b></td>
+</tr>
+<tr>
+<td>Понедельникъ</td>
+<td>Шестица</td>
+</tr>
+<tr>
+<td>Вторникъ</td>
+<td>Седьмица</td>
+</tr>
+<tr>
+<td>Тритейникъ</td>
+<td>Осьмица</td>
+</tr>
+<tr>
+<td>Четверикъ</td>
+<td>Неделя</td>
+</tr>
+<tr>
+<td>Пятница</td>
+<td>Понедельникъ</td>
+</tr>
+<tr>
+<td>Шестица</td>
+<td>Вторникъ</td>
+</tr>
+<tr>
+<td>Седьмица</td>
+<td>Тритейникъ</td>
+</tr>
+<tr>
+<td>Осьмица</td>
+<td>Четверикъ</td>
+</tr>
+<tr>
+<td>Неделя</td>
+<td>Пятница</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p align="justify"><b><span style="color: #800000;">111</span></b> Лѣто началось с Осьмицы, значит чётный 6 месяц Элетъ начинается в Четверикъ:</p>
+<div align="center">
+<table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse;" bordercolor="#111111">
+<tbody>
+<tr>
+<td colspan="13">
+<p align="center"><b>Дни недели с которых начинаются месяцы Лѣт Круголѣта</b></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center">Месяц</p>
+</td>
+<td colspan="9">
+<p align="center">Простые лета</p>
+</td>
+<td colspan="3">Священные лета</td>
+</tr>
+<tr>
+<td>1. Рамхат</td>
+<td>Пн.</td>
+<td>Шт.</td>
+<td>Вт.</td>
+<td>Сд.</td>
+<td>Тр.</td>
+<td>Ом.</td>
+<td>Чт.</td>
+<td>Нд.</td>
+<td>Пт.</td>
+<td>Пн.</td>
+<td>Чт.</td>
+<td>Сд.</td>
+</tr>
+<tr>
+<td>2. Айлет</td>
+<td>Шт.</td>
+<td>Вт.</td>
+<td>Сд.</td>
+<td>Тр.</td>
+<td>Ом.</td>
+<td>Чт.</td>
+<td>Нд.</td>
+<td>Пт.</td>
+<td>Пн.</td>
+<td>Шт.</td>
+<td>Нд.</td>
+<td>Тр.</td>
+</tr>
+<tr>
+<td>3. Бейлет</td>
+<td>Пн.</td>
+<td>Шт.</td>
+<td>Вт.</td>
+<td>Сд.</td>
+<td>Тр.</td>
+<td>Ом.</td>
+<td>Чт.</td>
+<td>Нд.</td>
+<td>Пт.</td>
+<td>Вт.</td>
+<td>Пт.</td>
+<td>Ом.</td>
+</tr>
+<tr>
+<td>4. Гэйлет</td>
+<td>Шт.</td>
+<td>Вт.</td>
+<td>Сд.</td>
+<td>Тр.</td>
+<td>Ом.</td>
+<td>Чт.</td>
+<td>Нд.</td>
+<td>Пт.</td>
+<td>Пн.</td>
+<td>Сд.</td>
+<td>Пн.</td>
+<td>Чт.</td>
+</tr>
+<tr>
+<td>5. Дайлет</td>
+<td>Пн.</td>
+<td>Шт.</td>
+<td>Вт.</td>
+<td>Сд.</td>
+<td>Тр.</td>
+<td>Ом.</td>
+<td>Чт.</td>
+<td>Нд.</td>
+<td>Пт.</td>
+<td>Тр.</td>
+<td>Шт.</td>
+<td>Нд.</td>
+</tr>
+<tr>
+<td>6. Элет</td>
+<td>Шт.</td>
+<td>Вт.</td>
+<td>Сд.</td>
+<td>Тр.</td>
+<td>Ом.</td>
+<td>Чт.</td>
+<td>Нд.</td>
+<td>Пт.</td>
+<td>Пн.</td>
+<td>Ом.</td>
+<td>Вт.</td>
+<td>Пт.</td>
+</tr>
+<tr>
+<td>7. Вэйлет</td>
+<td>Пн.</td>
+<td>Шт.</td>
+<td>Вт.</td>
+<td>Сд.</td>
+<td>Тр.</td>
+<td>Ом.</td>
+<td>Чт.</td>
+<td>Нд.</td>
+<td>Пт.</td>
+<td>Чт.</td>
+<td>Сд.</td>
+<td>Пн.</td>
+</tr>
+<tr>
+<td>8. Хейлет</td>
+<td>Шт.</td>
+<td>Вт.</td>
+<td>Сд.</td>
+<td>Тр.</td>
+<td>Ом.</td>
+<td>Чт.</td>
+<td>Нд.</td>
+<td>Пт.</td>
+<td>Пн.</td>
+<td>Нд.</td>
+<td>Тр.</td>
+<td>Шт.</td>
+</tr>
+<tr>
+<td>9. Тайлет</td>
+<td>Пн.</td>
+<td>Шт.</td>
+<td>Вт.</td>
+<td>Сд.</td>
+<td>Тр.</td>
+<td>Ом.</td>
+<td>Чт.</td>
+<td>Нд.</td>
+<td>Пт.</td>
+<td>Пт.</td>
+<td>Ом.</td>
+<td>Вт.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p align="justify"><span style="color: #800000;"><b>113</b></span> Лѣто началось с Четверика, значит чётный 6 месяц Элетъ начинается с Недели.</p>
+<p align="justify">Для определения дня недели рождения воспользуемся таблицей <a href="#Сороковник">Сороковников</a>. Для примера 1: 1 Элетъ = Четверикъ, 2&nbsp; Элетъ = Пятница, ... 35 Элетъ = Вторникъ. Для примера 2: 1 Элетъ = Неделя, 2&nbsp; Элетъ = Понедельник, ... 9 Элетъ = Осьмица.</p>
+<p align="justify">Проверяем расчеты:</p>
+<p align="justify">Новый скрипт:
+<script src="modules/blog/ha-tha/vedy/script/kolyada.js"></script>
+</p>
+<div align="center">
+<table width="650" border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse;" bordercolor="#111111">
+<tbody>
+<tr>
+<td width="200" align="center"><form method="POST" id="form1">дата, месяц, год: <br /><select size="1" name="day">
+<option selected="selected">1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option>
+</select><select size="1" name="month">
+<option selected="selected">1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+</select><input name="year" maxlength="4" value="" size="4" type="text" /> <br /> время:<select name="shift" size="1">
+<option selected="selected">с 00:00 до 17:59</option>
+<option>с 18:00 до 23:59</option>
+</select><br /> <input onclick="calculateAryanDate( 'form1', 'form1results' )" type="button" value="Подсчитать" /></form></td>
+<td width="450" align="center">
+<div id="form1results" style="font-size: small; text-align: center;"><noscript><b>Для работы калькулятора разрешите исполнение сценариев</b></noscript></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p align="justify">Для определения времени рождения необходимо знать час и минуту своего рождения по современному календарю. Напоминаем, что сутки по Славяно-Арийскому Календарю начинаются в 18:00 ‒ в зимнее время, и в 19:00 ‒ в летнее время, и длятся 16 часов, каждый час из которых содержит 144 части. Таким образом, 1 час составляет 1,5 современных часа и, наоборот, 1 современный час равен двум третям старого часа; соответственно 1 современная минута вмещает в себя 1,6 части старой минуты.</p>
+<p align="justify">Поэтому, если час рождения между 18 и 24 часами в зимнее время, то достаточно подсчитать, сколько часов и частей Славяно-Арийского Календаря прошло, начиная с 18:00. Для летнего времени считать нужно с 19:00 и помнить, что его ввели с 1 апреля 1981 года. Если Вы родились после 00:00, то при подсчете не забудьте учесть 6 современных часов, которые прошли с 18:00 до 24:00. Для лучшего понимания построим таблицу:</p>
+<div align="center">
+<table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse;" bordercolor="#111111" id="table1">
+<tbody>
+<tr>
+<td align="center" colspan="2"><b>Славяно-Арийские</b></td>
+<td align="center">16 (0)</td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">6</td>
+<td align="center">7</td>
+<td align="center">8</td>
+<td align="center">9</td>
+<td align="center">10</td>
+<td align="center">11</td>
+<td align="center">12</td>
+<td align="center">13</td>
+<td align="center">14</td>
+<td align="center">15</td>
+</tr>
+<tr>
+<td align="center" rowspan="2"><b>Современные</b></td>
+<td align="center"><b>&nbsp;(зимнее)</b></td>
+<td align="center">18:00</td>
+<td align="center">19:30</td>
+<td align="center">21:00</td>
+<td align="center">22:30</td>
+<td align="center">00:00</td>
+<td align="center">01:30</td>
+<td align="center">03:00</td>
+<td align="center">04:30</td>
+<td align="center">06:00</td>
+<td align="center">07:30</td>
+<td align="center">09:00</td>
+<td align="center">10:30</td>
+<td align="center">12:00</td>
+<td align="center">13:30</td>
+<td align="center">15:00</td>
+<td align="center">16:30</td>
+</tr>
+<tr>
+<td align="center"><b>(летнее)</b></td>
+<td align="center">19:00</td>
+<td align="center">20:30</td>
+<td align="center">22:00</td>
+<td align="center">23:30</td>
+<td align="center">01:00</td>
+<td align="center">02:30</td>
+<td align="center">04:00</td>
+<td align="center">05:30</td>
+<td align="center">07:00</td>
+<td align="center">08:30</td>
+<td align="center">10:00</td>
+<td align="center">11:30</td>
+<td align="center">13:00</td>
+<td align="center">14:30</td>
+<td align="center">16:00</td>
+<td align="center">17:30</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p align="justify">Каждый славянский час и каждая часть, также как чертоги и лета, дают человеку при рождении определённую <a href="ha-tha.php?str=vedy/h_vremya">характеристику</a>.</p>
+<p align="justify">Пример: 7:40. Переведём часы. 7:30 ‒ это 9 часов. Остаётся 10 минут. Помним, что 1 современная минута = 1,6 части: 10 * 1,6 = 16. Итого: 9 часов, 16 частей.</p>
+<p align="justify">Пример: 12:30 (после 1 апреля 1981г), т.е. учитываем переход на летнее время. 11:30 ‒ это 11 часов. Остаётся 1 час, который равен 60 минут, переведём в части: 60*1,6 = 96. Итого: 11 часов, 96 частей.</p>
+<p align="justify">Проверяем расчеты:</p>
+<div align="center">
+<table width="250" border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse;" bordercolor="#111111">
+<tbody>
+<tr align="center">
+<td>Часы</td>
+<td>Минуты</td>
+<td>Секунды</td>
+</tr>
+<tr align="center" onchange="pvd()" onblur="pvd()">
+<td><select align="center" id="chas" size="1"></select></td>
+<td><select align="center" id="min" size="1"></select></td>
+<td><select align="center" id="sec" size="1"></select></td>
+</tr>
+<tr align="center">
+<td colspan="3" onclick="pvd()" style="background-color: #cecece; cursor: pointer;" onmouseover="this.style.backgroundColor='#bebebe';" onmouseout="this.style.backgroundColor='#dedede';">&darr; Перевод &darr;</td>
+</tr>
+<tr align="center">
+<td colspan="3">
+<div id="perevodnyakc">&nbsp;<b><noscript>Для работы калькулятора разрешите исполнение сценариев</noscript></b>&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+<span size="2" style="font-size: small;"><a href="out.php?link=http://pidrahuy.net" target="_blank">сайт автора</a></span></div>
+<p align="justify">
+<script language="javascript" type="text/javascript" src="modules/blog/ha-tha/vedy/script/perevod.js"></script>
+</p>
+<p align="center"><b><a name="ОбереговаяЦифра"></a>Обереговая цифра жизни</b></p>
+<p align="justify">Обереговое число жизни указывает на духовную и душевную характеристику человека. Оно высчитывается по славянской дате рождения и указывает на духовную основу в отличии от цифры жизни, которая указывает на эмоциональную основу.</p>
+<p align="justify">Для первого примера: 35.6.7487 &equiv; 3+5 + 6 + 7+4+8+7 = 40 &equiv; 4+0 &equiv; <b> <a href="ha-tha.php?str=vedy/oberegovoe#4" target="_blank">4</a>.</b> Т.е. сложили все числа Дня рождения до получения одного числа. Для второго примера: 9.6.7489 &equiv; 9 + 6 + 7+4+8+9 = 43 &equiv; 4+3 &equiv; <b><a href="ha-tha.php?str=vedy/oberegovoe#7" target="_blank">7</a></b>. <a href="ha-tha.php?str=vedy/oberegovoe" target="_blank">Описание</a>.</p>
+<p align="center"><b><a name="ЦифраЖизни"></a>Цифра жизни</b></p>
+<p align="justify">Высчитывается по современной дате рождения и указывает на эмоциональную основу. Для первого примера: 15.05.1979 &equiv; 1+5 + 5 + 1+9+7+9 = 37 &equiv; 3+7 = 10 &equiv; 1+0 &equiv; <b> <a href="ha-tha.php?str=vedy/oberegovoe#1-">1</a></b>. Для второго примера: 22.04.1981 &equiv; 2+2 + 4 +1+9+8+1 = 27 &equiv; 2+7 &equiv; <b> <a href="ha-tha.php?str=vedy/oberegovoe#9-">9</a></b>. <a href="ha-tha.php?str=vedy/oberegovoe#ЦифраЖизни">Описание</a></p>
+<p align="center"><b><a name="ЦифраДня"></a>Цифра дня</b></p>
+<p align="justify">Определяет качество дня, помогает определить структуру предстоящих событий и помогает подготовиться человеку к данным событиям. Для определения необходимо суммировать цифру жизни, имени и даты расчётов. Например, Иванов Иван, родился 15.05.1979, расчёт на 12.12.2012:</p>
+<p align="justify">Иванов ‒ 6 букв, Иван ‒ 4 буквы. Цифра имени = 6+4 = 10 &equiv; 1+0 &equiv; 1<br /> Цифра жизни: 15.05.1979 &equiv; 1+5+0+5+1+9+7+9 &equiv; 1<br /> Цифра дня: 12.12.2012 &equiv; 1+2 + 1+2 + 2+1+2 &equiv; 11 &equiv; 1+1 &equiv; 2<br /> Отсюда обереговая цифра дня равна: 1+1+2 = <b><a href="ha-tha.php?str=vedy/oberegovoe#4--">4</a>. </b> <a href="ha-tha.php?str=vedy/oberegovoe#ЦифраДня">Описание</a></p>
+<p align="center"><b><a name="ЖреческийКвадрат"></a>Жреческий (магический) квадрат</b><br /> (Квадрат судеб человеческих)</p>
+<p align="justify">С помощью жреческого квадрата вычисляются качества данные человеку при рождении. Жреческий квадрат выглядит так:</p>
+<div align="center">
+<table style="border-collapse: collapse;" bordercolor="#111111" cellspacing="0" cellpadding="0" border="1">
+<tbody>
+<tr>
+<td align="middle" width="30">4</td>
+<td align="middle" width="30">9</td>
+<td align="middle" width="30">2</td>
+</tr>
+<tr>
+<td align="middle" width="30">3</td>
+<td align="middle" width="30">5</td>
+<td align="middle" width="30">7</td>
+</tr>
+<tr>
+<td align="middle" width="30">8</td>
+<td align="middle" width="30">1</td>
+<td align="middle" width="30">6</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Заметь, сумма горизонтальных линий, вертикальных линий и диагоналей равна 15. Для вычислений понадобится:</p>
+<p>Цифра жизни: 15.05.1979 &equiv; <span style="color: #ff0000;">1</span>+<span style="color: #ff0000;">5</span> + <span style="color: #ff0000;">5</span> + <span style="color: #ff0000;">1</span>+<span style="color: #ff0000;">9</span>+<span style="color: #ff0000;">7</span>+<span style="color: #ff0000;">9</span> &equiv; 37 &equiv; <span style="color: #ff0000;">3</span>+<span style="color: #ff0000;">7</span> &equiv; 10 &equiv; <span style="color: #ff0000;">1</span>+0 &equiv; <span style="color: #ff0000;">1</span>. Все красные цифры записываем в жреческий квадрат.<br /> Цифра времени рождения: 7<u><sup>40</sup></u>&nbsp;&equiv; <span style="color: #ff0000;">7</span>+<span style="color: #ff0000;">4</span>+0 &equiv; <span style="color: #c0c0c0;">11</span> &equiv; <span style="color: #c0c0c0;">1+1</span> &equiv;&nbsp; <span style="color: #ff0000;">2. </span>Все красные цифры записываем в жреческий квадрат, кроме промежуточных вычислений:</p>
+<div align="center">
+<table style="border-collapse: collapse;" bordercolor="#111111" cellspacing="0" cellpadding="0" border="1">
+<tbody>
+<tr>
+<td align="middle" width="30">4</td>
+<td align="middle" width="30">99</td>
+<td align="middle" width="30">2</td>
+</tr>
+<tr>
+<td align="middle" width="30">3</td>
+<td align="middle" width="30">55</td>
+<td align="middle" width="30">777</td>
+</tr>
+<tr>
+<td align="middle" width="30">&nbsp;</td>
+<td align="middle" width="30">1111</td>
+<td align="middle" width="30">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Если заполнена диагональ 8-5-2: Жизнь, отмеченная Богом (любимчик Богов).<br /> Если заполнена диагональ 4-5-6: Любовь к ближнему.<br /> Если заполнена горизонталь 4-9-2: Сила воли.<br /> Если заполнена горизонталь 3-5-7: Семейный уклад.<br /> Если заполнена горизонталь 8-1-6: Решение всех вопросов.<br /> Если заполнена вертикаль 4-3-8: Твёрдость жизненного стержня (целеустремлённость).<br /> Если заполнена вертикаль 9-5-1: Благосостояние (материальное, духовное и т.д.).<br /> Если заполнена вертикаль 2-7-6: Талант.</p>
+<p align="justify">Количество цифр в ячейках жреческого квадрата показывает <b> энергетический портрет</b>, т.е. сколько изначально открыто у человека энергетических каналов (энергопотоков, чакр):</p>
+<div align="center">
+<table style="border-collapse: collapse;" bordercolor="#111111" cellspacing="0" cellpadding="2" border="1">
+<tbody>
+<tr>
+<td><b>Чакра</b></td>
+<td><b>Описание чакры</b></td>
+<td><b>Открыто каналов</b></td>
+</tr>
+<tr>
+<td align="middle">1.</td>
+<td>Энергия жизни</td>
+<td align="middle">4</td>
+</tr>
+<tr>
+<td align="middle">2.</td>
+<td>Энергия других жизн. сущностей</td>
+<td align="middle">1</td>
+</tr>
+<tr>
+<td align="middle">3.</td>
+<td>Вселенская энергия жизни</td>
+<td align="middle">1</td>
+</tr>
+<tr>
+<td align="middle">4.</td>
+<td>Творческая энергия</td>
+<td align="middle">1</td>
+</tr>
+<tr>
+<td align="middle">5.</td>
+<td>Энергия любви</td>
+<td align="middle">2</td>
+</tr>
+<tr>
+<td align="middle">6.</td>
+<td>Энергия интуиции (предчувствий)</td>
+<td align="middle">0</td>
+</tr>
+<tr>
+<td align="middle">7.</td>
+<td>Энергия чувств</td>
+<td align="middle">3</td>
+</tr>
+<tr>
+<td align="middle">8.</td>
+<td>Энергия судьбы (кармическая)</td>
+<td align="middle">0</td>
+</tr>
+<tr>
+<td align="middle">9.</td>
+<td>Энергия разума, интеллекта</td>
+<td align="middle">2</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p align="justify">&nbsp;</p>
+<table cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td background="../img/usor.gif" height="15"><span size="1" face="Arial" style="font-family: Arial; font-size: xx-small;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p align="justify">Многие элементы Славянского Календаря дошли до наших дней в виде поговорок и обычаев, истоки которых, к сожалению, уже забылись. Например, Великая тризна, то есть поминовение умершего родственника, совершается через неделю (9 дней) и через месяц (40 дней), то есть на девятый и сороковой день.</p>
+<p align="justify">Семь месяцев вынашивает мать чадо во чреве своем и сорок сороков (сорок месяцев) потом кормит его грудным молоком.</p>
+<p align="justify">А через сорок сороков (или четыре лета и четыре месяца) после рождения первого ребенка у женщин наступает период жизненного совершенствования, в результате чего она становится Ведающей Матерью или ВедьМой. Сейчас под ведьмой понимается совсем другое.</p>
+<p align="justify">Через 369 недель после рождения человека начинается период его Духовного Обучения, ибо в девять лет происходит первое Великое приобщение к Древней Мудрости Богов и Предков.</p>
+<p align="justify">Когда же детям из Славяно-Арийских Родов исполнялось 12 лет (108 месяцев) и они достигали роста 7 пядей во лбу (лоб &ndash; макушка головы, лобное место, а то, что сейчас называют лбом, называется челом, т.е. челом бьют и т.д.), для детей начинался новый этап в жизни. В 108 месяцев (или в 12 лет) наступает совершеннолетие человека, и он проходит обряды Совершеннолетия и Имянаречения, после чего мальчиков начинают обучать родовым ремеслам и воинскому искусству.</p>
+<p align="justify">А еще через 108 месяцев, то есть в 24 лето, он, принимая Духовное освящение Священным Огнем, познает истинный смысл бытия своего Рода и истинное значение Родового имени.</p>
+<p>В 33 лето наступает время Духовного совершенствования.</p>
+<p>А в 369 месяцев или в 41 лѣто начинается эпоха Духовного Озарения.</p>
+<p align="justify">Девушка могла выходить замуж только после 16 лет или 144 месяцев, что составляет Единый Круг Круголета. До этого срока она вестует &mdash; познаёт Весть, т.е. обучается ведению домашнего хозяйства, уходу за детьми, рукоделию, а в 16 лет &mdash; заканчивает вестовать и становится ведуньей. Если она не научилась или не сберегла целомудрие, что являлось большим позором, т.к. Предки знали о законах Телегонии (Законы Рита), то таких называли НеВестой, т.е. неумёхой, не ведающей. И когда таких берут в жёны, то это называется Браком, а не СВАдьбой.</p>
+<table cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td background="../img/usor.gif" height="15"><span size="1" face="Arial" style="font-family: Arial; font-size: xx-small;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p align="center"><b><a name="ЭпохаЛисы"></a>Эпоха Лисы (392&mdash;2012&nbsp;г. н. эры)</b></p>
+<p align="justify">В 10948 году до нашей эры, с эпохи Девы, начались следующие сутки Сварога, наступил галактический вечер и сознание человечества начало &laquo;засыпать&raquo;. При наступлении галактического вечера произошёл <a href="#ЛетоотВеликойСтужи">Великий потоп</a>, в котором <a href="#ЛетоотВеликойСтужи">погибла Атлантида</a> и практически всё население планеты. Более сотни легенд и мифов ходит об этой страшной трагедии у разных народов, а индейцы Америки ведут свой календарь от наступления данных событий &ndash; у них на календаре сейчас 13653 год. Сместились магнитные полюса (относительно коры Земли, а не ориентации в космосе). Спастись удалось лишь немногим праведным людям, сохранившим часть древних Ведических Знаний.</p>
+<p align="justify">С 4468 г. до нашей эры, эпохи Финиста, началась галактическая ночь Сварога, которая длится по настоящее время. Начало ночи Сварога ознаменовалось такими событиями, как прибытие на нашу Землю с тёмной восточтой стороны потомков Адама 3662 до н.э. Так же произошло сильнейшее землетрясение в IV веке до нашей эры, которое привело к знаменитому, описанному даже в библии, потопу и к образованию пролива Басфор и Дардонелы.</p>
+<p align="justify">В 392 году нашей эры наступила эпоха Лисы (покровительство богини Марены), сопровождающаяся расцветом лжи и обмана, ‒ её символом является крест. Это самое тёмное время, которое наступает всегда перед рассветом. Об этом славяно-арийцы были предупреждены в "Книги мудрости Перуна", в которой Бог Перун дал потаённую мудрость жрецам и старейшинам Родов Святой Расы, как подготовиться к тёмным тяжким временам, когда рукав нашей Свастичной Галактики будет проходить через пространства подвластные силам из тёмных Миров пекла. В это время Светлые Боги перестают посещать свои народы, так как они, в соответствии с законом Небесной Этики, не нарушают границ пространства, подвластного силам тёмных Миров Пекла.</p>
+<p align="justify">В &laquo;Книге Мудрости Перуна&raquo; сказано, что многие люди погибнут от металла и огня. На 7 кругов жизни (1008 лет от крещения Руси и до наших дней) окутает тьма земли родов Расы Великой. В индийских источниках указан период тяжёлых времён в 900 лет. Это время войн и упадка Веры Предков, власть над Землёй безраздельно принадлежит Чернобогу и богине Марене.</p>
+<p align="justify">О наступлении данного лютого времени в книге "Велеса" говорится так: "Множатся там грехи. Нет почёта старцам от юных, и отца не слушают дети, братья бьются между собою, предаются вожделению, предаются тяжким порокам, все смешались сословья, почитают в тех землях мощи и не славят Светлых Богов, отвергают Всевышнего".</p>
+<p align="justify">Начало Светлых времён, то есть рассвета, начнётся в Священное Лето 7521 от Сотворения Мира в Звёздном Храме (С.М.З.Х.) или в 2012 году от Рождества Христова. У индейцев Майя календарь ночи Сварога тоже заканчивается 22 декабря 2012 года. И как сказано в древних писаниях, нам надо ждать невероятных перемен, <a target="_blank" href="http://azhur-ot-scarlet.com">связанных</a> с переходом. <b>Теперь остаётся только предположить, что следующим событием, которое нас ждёт, будет грандиозный военный конфликт с возможным применением ядерного оружия или природный катаклизм. </b>А скорее всего и то, и другое, так наступает рассвет &ndash; эпоха Волка, санитара природы, под покровительством одного из Прародителей Славяно-Арийцев &ndash; Бога Велеса (есть предсказание также в Эдде): "хлынут воды на Землю и очистят её от скверны". Но праведные люди будут предупреждены и спасены нашими Светлыми Богами, и возродится ведическая Вера Предков. Для тёмных людей наступит конец света, а для светлых &ndash; конец тьмы, и наступление этих событий может произойти в срок не далее одного круга жизни (144 года).</p>
+<table cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td background="../img/usor.gif" height="15"><span size="1" face="Arial" style="font-family: Arial; font-size: xx-small;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p align="center"><b><a name="КалендарныесистемыЕвропы"></a>Календарные системы Европы</b></p>
+<p align="justify">У разных народов, живших на территории Европы, были разные системы счета дней. У <b>кельтов</b> и <b>скандинавов</b> изначально был 9-и месячный календарь, но впоследствии он был заменён 24-х месячным. Это было <a href="http://azhur-ot-scarlet.com" target="_blank">связано</a> с постоянно изменяющимися климатическими условиями и полным переходом на руническую форму письма. После перехода, каждый месяц обозначался своей руной, из т.н. Футарха (сборника Рун). Месяца отличались по продолжительности, так 1 месяц был 14 дней, 2 месяц ‒ 15 дней и 3 месяц ‒ 16 дней... потом данное чередование повторялось.</p>
+<p align="justify">Такое чередование в первую очередь было связано с фазами Луны, периодичность которой ‒ 29,5 дней. Таким образом, первые 4 месяца Рунического календаря (14+15+16+14=59) соответствовали 2-м полным лунным месяцам (29,5+29,5=59). А дальнейшая система чередования месяцев соединяла между собой лунные фазы с солнечным календарём. Т.е. год Рунического календаря содержал 360 дней.</p>
+<p align="justify">Но так как в Рунике была еще и 25 пустая руна, иногда называемая руной Одина, то и она нашла своё применение в календаре. В конце каждого третьего года, вставлялся дополнительный 25 месяц, в котором шло чередование дней сначала 14, потом 15, а затем 16 дней. Этот 25 месяц помогал выровнять цикличность солнечного года, также как сейчас это делают при помощи високосного года.<br /> <br /> На юге Европы, на территории современной Италии, жили <b>Расены</b>, которых больше знают под названиями <b>Этруски</b> или <b>Тиррены</b>, которые также пользовались 9-и месячным календарём.</p>
+<p align="justify">Прибывшие на территорию Италии <b>латиняне</b> и <b>сабиняне</b>, принесли с собой свои календарные системы. В последствии появились и новые системы, например греческие "Олимпийские циклы" или латинские "Календы от Основания Рима".</p>
+<p align="justify">Латиняне пытались навязать Расенам, свою календарную систему, а когда эта затея провалилась, латиняне объявили Этрусков глупыми, решили просто уничтожить Расенов.</p>
+<p align="justify"><b><a name="Юлианскийкалендарь"></a>Юлианский календарь</b><br /> <br /> Вот это большое многообразие календарных систем, иногда вводило большую путаницу в определение "больших торговых дней". Поэтому в 45 г. до н.э. по указу Императора <b>Юлия Цезаря</b>, была введена "новая" Календарная система, которую требовалось соблюдать на территории всей Римской империи. За основу этого "нового" календаря был взят действующий календарь жрецов Египта. Юлий Цезарь его несколько изменил, таким образом, появился всем известный Юлианский календарь.<br /> <br /> А теперь представьте, с какими проблемами столкнулись христианские миссионеры, которые отправились "просвещать" язычников Европы. Даже если они кого-то приобщали к новой вере, то тут же сталкивались с проблемами, когда проводить праздники или в какое время соблюдать посты.</p>
+<p align="justify">Иная календарная система, не позволяла христианам-миссионерам правильно определить, какая дата местного календаря соответствует Юлианскому календарю, ибо местные календари были более сложные для понимания христиан, и к тому же сравнительные даты постоянно "плавали".</p>
+<p align="justify">Выход был найден только один. Запретить старый календарь и ввести новый ‒ Юлианский.<br /> <br /> Та же самая картина наблюдалась и при крещении Руси. Введённый Юлианский календарь народ не принял. Потому что народу было непонятно, зачем нужен на Русской земле чужеродный календарь, с номерными месяцами на латинском языке, которых на 3 больше, да к тому же еще начинавшийся не в День Осеннего Равноденствия, а в начале весны.<br /> <br /> Но христиане нашли выход из создавшегося положения, они придумали славянские названия для Юлианского календаря и месяца вместо номеров на латыни получили славянские названия: <b>Березень, Квiтень, Травень, Червень, Липень, Серпень, Вересень, Жовтень, Листопад, Грудень, Сiчень, Лютий</b>.</p>
+<p align="justify">Только в таком виде христианам удалось навязать славянским народам чужой календарь. В других славянских странах была проделана та же реконструкция Юлианского календаря, и месяца получили свои славянские названия.</p>
+<p align="justify">Но даже после того, как христиане нашли выход из создавшегося положения, и в Юлианском календаре месяца получили славянские названия древний Славяно-Арийский календарь не перестал существовать. На всех славянских землях продолжали использовать два календаря, т.к. по новому (Юлианскому) календарю можно было узнать о церковных праздниках, и о событиях прошлого произошедших далеко от славянских земель. А старый календарь, нужен был в первую очередь для повседневной жизни людей, ибо по нему определяли, когда начинать и когда заканчивать сельхоз работы, и другие дела. Ведь одними молитвами сыт не будешь.<br /> <br /> Но церковные и светские власти не устраивало то, что народ праздники отмечал по обоим календарям, но больше всего не устраивала путаница, которую создавали летописцы, ведь русские летописцы использовали даты старого, славянского календаря, а приглашенные греки-летописцы использовали даты из нового календаря, где Новолетие отсчитывалось от первого весеннего полнолуния...<br /> <br /> Например: дата 1 марта 1005 г. н.э. по Славяно-Арийскому календарю выпадала на Лето 6513 от С.М.З.Х, а по христианскому на Лето 6512 от С.М., таким образом, разница между Славяно-Арийским календарём и календарём от Рождества Христова составляла 5508 лет, а у христианского календаря ‒ 5507 лет.</p>
+<p align="justify">Чтобы как-то упорядочить несогласованность нового календаря, в Лето 6856 (1348 г. н. э.) по указу царя <b>Ивана III</b>, Новолетие в новом календаре было зафиксировано на 1 марта, а число года взяли от старого Славянского календаря. <br /> <br /> Кроме того, началась подгонка нового календаря под повседневную жизнь, одни праздники запрещали, другие, которые праздновали несмотря на запреты, христианская церковь стала адаптировать под себя. Так, например:</p>
+<p align="justify"><b>День Бога Велеса</b> был заменён <b>Днём Власия</b>;<br /> <b>День Масленицы-Марёны</b> был объявлен просто <b>Масленицей</b>; <br /> <b>День Бога Купалы</b> стал днём Иоанна Крестителя, или как его называли на русский манер ‒ <b>Иваном Купалой</b>, т.е. Иваном, который в реке всех купал; <br /> <b>День Триглава</b> (Сварога-Перуна-Свентовита) превратился в <b>Троицу</b>;<br /> <b>Вышний День Бога Перуна</b> заменили <b>Днём Ильи-Пророка</b>, и т.д.<br /> <br /> Но больше всего церковные и светские власти не устраивало, что народ пользуется двумя календарями, отмечает два Новолетия. Христианское Новолетие 1 марта, и Славянское Новолетие в День Осеннего Равноденствия.</p>
+<p align="justify">Никакие запреты Славяно-Арийского календаря не помогали, а принятие жестких мер вплоть до казней, дало обратный эффект. Во многих городах и сёлах началась смута и поднялись восстания, везде шло поголовное уничтожение христианских священников и их помощников. Дело дошло до того, что были уничтожены многие тысячи "божих людей", и тогда пришлось царю Ивану III "идти в народ", ибо только так власти смогли успокоить восставший народ.</p>
+<p align="justify">Чтобы впредь не возникало смуты и разора, царь не только разрешил людям пользоваться старым календарём, но и узаконил право почитать Старую Веру Предков. Таким образом, на Русской земле было официально узаконено Двоеверие и два календаря. Церковный календарь стал считаться&nbsp; официальным, т.е. государственным, а старый календарь ‒ народным. <br /> <br /> Следующее изменение официального календаря произошло через 1 Круг Жизни (144 года). При приближении Лета 7000 году от Сотворения Мира (1492 г. н.э.), среди христиан в России росли апокалипсические настроения. Все ждали <b>конца света</b> и даже не составляли пасхалию на последующие годы. Но когда все ожидаемые сроки конца света прошли, Московский церковный собор в сентябре Лета 7000 (1492) утвердил новую пасхалию и принял решение о переносе начала года с 1 марта на 1 сентября. Это постановление действует в Христианской Церкви до сих пор.</p>
+<p align="justify"><b><a name="Григорианскийкалендарь"></a>Григорианский календарь</b><br /> <br /> В Лето 7090 (1582 г.) католической церковью по указанию папы римского Григория XIII был введен новый календарь, который получил его имя. В новом календаре датировка шла уже не от Сотворения Мира, а от Рождества Христова. Необходимость введения нового календаря связывалась с тем, что продолжительность Юлианского календарного года немного больше продолжительности года природного, а потому он стал немного отставать от природы, так что за 128 лет накапливались одни сутки. Поэтому на момент введения Григорианского календаря набежало уже 10 дней разницы.</p>
+<p align="justify">Но не все европейские страны сразу перешли на новый календарь, некоторым странам понадобились годы или даже столетия, чтобы перейти на новый Григорианский стиль. В России на данный стиль перешли окончательно только в феврале 1918 года.</p>
+<p align="justify">Григорианский календарь также не является абсолютно точным: он отстает от природного на одни сутки за 3300 лет; кроме того, григорианский календарь &laquo;неравномерен&raquo;, он содержит своего рода &laquo;скачки&raquo;. Но постепенно григорианский календарь был принят большинством государств и сегодня является общепризнанным.</p>
+<table cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td background="../img/usor.gif" height="15"><span size="1" face="Arial" style="font-family: Arial; font-size: xx-small;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p align="center"><b><a name="ГодавместоЛета"></a>Года вместо Лѣта</b></p>
+<p align="justify"></p>
+<p align="justify" style="text-align: center;"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/letopis.jpg" class="img-rounded" /></p>
+<p align="justify">Как все знают, царь-реформатор Петр I, прорубал "окно в Европу", когда все нормальные люди ходят через дверь. Он перенимал и вводил всё западное. Заставил мужиков носить платья с рюшечками, ленточками, бантиками. Заставил брить бороды (богатство Рода), чтоб все мужики были женоликими. Навязывал своему народу табакокурение и многое другие непристойности. При дворе на русском языке не разговаривали, т.к. он считался языком простого народа. Разговаривали на германском, голландском языках. Т.е. его называли "Гер Питер".</p>
+<p align="justify">Мы во все времена считали не года, а Лета. Заметьте, древние своды о прошедших событиях назывались летописями, а не Годописями. Писали их летописцы. Мы до сих пор спрашиваем друг друга ‒ сколько тебе лет, а не сколько тебе годов. Существует слово летоисчисление, но нет годоисчисления. В Лето 7208 от <a href="#ЛетоСМЗХ">С.М.З.Х</a> (Сотворение Мира в Звёздном Храме) Петр I перенёс Новолетие, издав 20 декабря указ поздравлять&nbsp;друг друга 1-го января "с новым Got-ом", и ввести новый иностранный юлианский календарь, где после 31 декабря 7208 от С.М. начиналось 1-ое января 1700 г. от рождения Христа (До XVIII века в Московском государстве было принято летосчисление "от сотворения мира" (СМ), т.е. от Адама, введённое в Византии в VI в. Сотворение мира относилось к 5 508 году до н. э. Т.е. тут виден плагиат нашей <a href="#ЛетоСМЗХ">последней</a> календарной формы счисления). Иностранное "Got" созвучно с нашим "Год", только наше обозначает временной отрезок. С "годом" связаны слово&nbsp; "годить" (ожидать), от сюда &laquo;погоди&raquo; (подожди меня) и т.д. По этому, так легко "Got" стал "Годом".</p>
+<p>Глашатаи под барабанный бой объявили москвичам царский указ:</p>
+<p align="justify">"Декабря 20. Именный.&mdash; О празднованіи Новаго года. Великій Государь указалъ сказать: извѣстно Ему Великому Государю нетолько что во многихъ Европейскихъ Христіанскихъ странахъ, но и въ народахъ Славянскихъ, которые съ Восточною православною нашею Церковью во всемъ согласны, какъ: Волохи, Молдавы, Сербы, Далматы, Болгары и самые Его Великого Государя подданные Черкассы и всъ Греки, отъ которыхъ вѣра наша православная принята, всѣ тѣ народы согласно лѣта свои счисляютъ отъ Рождества Христова осьмь дней спустя, то есть Генваря съ 1 числа, а не отъ созданія міра, за многую разнь и считаніе въ тъхъ лѣтахъ, и нынъ отъ Рождества Христова доходитъ 1699 годъ, а будущаго Генваря съ 1 числа настанетъ новый 1700 годъ купно и новый столѣтный вѣкъ и для того добраго и полезнаго дъла, указалъ Великій Государь впредь лъта счислять въ Приказахъ и во всякихъ дълахъ и крѣпостяхъ писать съ нынѣшняго Генваря съ 1 числа отъ Рождества Христова 1700 года. А въ знакъ того добраго начинанія и новаго столътнаго въка въ царствующемъ градѣ Москвѣ, послѣ должнаго благодаренія къ Богу и молебнаго пѣнія въ церкви и кому случится и въ дому своемъ, по большимъ и проѣзжимъ знатнымъ улицамъ знатнымъ людямъ и у домовъ нарочитыхъ духовнаго и мірскаго чина передъ вороты учинить нѣкоторыя украшенія отъ древъ и вѣтвей сосновых, елевыхъ и можжевелевыхъ противъ образцовъ, каковы сдѣланы на Гостинъ дворѣ и у нижней аптеки, или кому как удобнѣе и пристойнѣе, смотря по мѣсту и воротамъ, учинить возможно; а людемъ скуднымъ каждому хотя по древцу, или вѣтьвѣ на вороты, или над храминою своею поставить; и то бъ то поспѣло, нынѣ будущаго Генваря къ 1 числу сего года, а стоять тому украшенію Генваря по 7-й день того жъ 1700 года. Да Генваря жъ в 1 день, въ знакъ веселія, другъ друга поздравляя Новымъ годомъ и столѣтиимъ вѣкомъ, учинить сіе: когда на большой Красной площади огненныя потѣхи зажгутъ и стрѣльба будетъ, потомъ по знатнымъ дворамъ Боярамъ и Окольничимъ и Думнымъ и Ближнимъ и знатнымъ людямъ палатнаго, воинскаго и купецкаго чина знаменитымъ людямъ, каждому на своемъ дворѣ изъ небольшихъ пушечекъ, буде у кого есть, и изъ нѣсколько мушкетовъ или инаго мълкаго ружья учинить трожды стрѣльбу и выпустить нѣсколько ракетовъ, сколько у кого случится, и по улицамъ большимъ, гдѣ пространство есть, Генваря с 1 по 7 число по ночамъ огни зажигать изъ дровъ или хворосту или соломы, а гдѣ мѣлкіе дворы, собрався пять или шесть дворовъ, такой огонь класть или, кто похочетъ, на столбикахъ поставить по одной или по 2 или по 3 смоляныя и худыя бочки, и наполни соломою или хворостомъ, зажигать; а передъ Бурмистрскою Ратушею стрѣльбѣ и такимъ огнямъ и украшенію по ихъ разсмотрѣнию быть же".<a href="#1">[1]</a></p>
+<p align="justify">Также &laquo;повелел его величество построить в разных местах часовые колокольни, на которых были часы против Голландского от 1 часа до 12 часов&raquo;.<a href="#1">[1]</a></p>
+<p align="justify">По иудейскому обычаю на восьмой день после рождения мальчика (Завет Авраама с Господом), родители приносят его в храм, где раввин производит "священный" обряд обрезания крайней плоти. Т.е. день рождения Иисуса плюс восемь дней и получим 1 Генваря. Вот и говорили при дворе "С новым Got-ом", где слово Got на германском Бог, т.е. "С новым (обрезанным) Богом". Т.е. эта Петрова шутка существует до сих пор, и люди, потеряв изначальный смысл, продолжают 1 января поздравлять друг друга с Новым обрезанным Богом, а не с Новолетием, как это было раньше...</p>
+<p align="justify">Даты и числа всегда записывалась буквицей. Это нам говорит о том, что письменность существовала у нас задолго до Солунских монахов Кирилла и Мефодия. И если бы не реформа Петра, эта бы церковная сказка про "просвещения неграмотных язычников" давно была бы забыта, как глупая шутка. Не зря же императрица Екатерина II говорила: "<i><b>Славяне за многие тысячи лет до Рождества Христова свои <a href="slovar.php?bukva=p#Письменность" target="_blank">письмена</a> имели</b></i>".</p>
+<p align="justify">Новый календарь укоротился до семи дней, в угоду почитателям лунного культа, т.е. был в угоду политическим интересам династии Романовых, которые подгоняли все исторические события под иудейскую Тору, т.е. писали историю: Ис-Торы-Я.</p>
+<p align="justify">Лета 7262 (1754г.) в Димитровском скиту Беловодья, в 30 мерных верстах от города Тары, Советом Старейшин, было принято решение об использовании двух Летоисчислений, "дабы избежать гонений и сотворения всяческих бед, славянам Святой Старой Православной Веры, от государевых служивых людей и от служителей Византийской христианской церкви".</p>
+<p align="justify">Священный Даарийский Круголет Числобога решено использовать для ведения Богослужений, празднования праздников и соблюдения <a href="ha-tha.php?str=vedy/post" target="_blank">ПОСТов</a> (П ‒ полное, О ‒ очищение, C ‒ собственных, Т ‒ телес). А введенный царем Петром, на всей территории Российской Империи юлианский календарь для мирской жизни общинников и прихожан, исповедующих Святую Веру Первопредков.</p>
+<table cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td background="../img/usor.gif" height="15"><span size="1" face="Arial" style="font-family: Arial; font-size: xx-small;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p align="center"><a name="КалендарныеФормыСчисления"></a><b>Календарные формы счисления</b></p>
+<p align="justify"><b><a name="ЛетоСМЗХ"></a>Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+document.write(S_M_Z_H);
+// ]]></script>
+СМЗХ</b></p>
+<p align="justify">У нас много календарных форм счисления. По последнему сейчас идёт Лето
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+document.write(S_M_Z_H);
+// ]]></script>
+от Сотворения Мира в Звездном Храме (С.М.З.Х.). Но это совершенно не означает, что наш Мир был сотворён
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+document.write(S_M_Z_H);
+// ]]></script>
+лет назад, как считали и считают христиане, когда еще не было отменено Петром I это летоисчисление и введено <a href="#ГодавместоЛета">годоисчисление</a> от Рождества Христова (Р.Х.).</p>
+<p align="justify" style="text-align: center;"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/gerb_moscow.png" class="img-rounded" /></p>
+<p align="justify">Сотворением Мира в древние времена называли заключение мирного договора между воюющими народами. Таким образом, у нас появилась "новая система отсчета". Этот самый мирный договор, между Великой Расой (Славяно-Ариями) и Великим Драконом (древними китайцами или аримами, как их тогда называли) был заключён в день Осеннего Равноденствия или в 1 день Первого месяца Лета 5500 от Великой Стужи (Великого Похолодания ‒ Ледникового периода). Победу одержала Великая Раса, что и было отображено в виде образа ‒ Белый витязь на коне поражает копьём Дракона (см. рис., герб Москвы). Но т.к. христиане приписывали все достижения наших Предков себе, то сейчас этот образ трактуют, как христианский святой великомученик Георгий Победоносец побеждает змия, который опустошал земли языческого царя. Как гласит предание, когда выпал жребий отдать на растерзание чудовищу царскую дочь, явился Георгий на коне и пронзил змея копьем, избавив царевну от смерти. Явление "святого" способствовало обращению местных жителей в христианство. Это сказание часто толковалось иносказательно: царевна&nbsp;‒ это церковь, а змей&nbsp;‒ язычество. Но вы поняли, что этот самый Георгий никакого отношения к древним событиям не имеет. Тут просто факт использования христианами древнего образа в своих целях.</p>
+<p align="justify">Хануман (Асур, т.е. князь Рассении), правивший в Беловодье и Ариман (правитель Аримии, т.е. древнего Китая) "Сотворили Мир", т.е. заключили мирный договор между Великой Расой и Великим Драконом, по которому поверженные аримы построили стену (бойницами в их сторону!) для обозначения границы Рассении. Стену назвали Кий-Тай, что в переводе с древлесловенского означает: Кий ‒ забор, изгородь; Тай ‒ завершение вершины, великий ‒ то есть "завершающая, ограничивающая великая изгородь (стена)". Т.е. в древние времена "Китаем" называли высокий забор или крепостную стену. Например: Китай-город в Москве назван так из-за высокой стены, которая его окружала, а вовсе не из-за китайцев.</p>
+<p align="justify">С того великого события и начался новый отсчет Лет у наших Предков. В память о том событии нашими Предками была написана Азъ-Веста (первая весть), или как её называют &ndash; Авеста на 12000 воловьих шкур. Авеста, являющаяся примером древних славянских книг, писавшихся как на пергаменте, так и на золоте, была уничтожена по приказу Александра Македонского, который хоть и был славянином по происхождению, но находился под духовным влиянием иудея Аристотеля. Миру позднее стала известна дольше сохранившаяся искаженная версия Авесты ‒ Зенд-Авеста, которую исказил Заратустра, добавив свои комментарии и исправления.</p>
+<p align="justify"><b><a name="ЛетоотВеликойСтужи"></a>Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+V_S = S_M_Z_H + 5500; document.write(V_S);
+// ]]></script>
+от Великой Стужи (Великого Похолодания)</b></p>
+<p align="justify">Это летоисчисление берёт начало от Великого Похолодания, которое было связано с катастрофой &ndash; падением на Мидгардъ в Тихий океан осколков разрушенной Луны Фатты. Фатта до падения вращалась вокруг Мидгарда (в экваториальной плоскости) с периодом обращения 13 суток.&nbsp;</p>
+<p align="justify">Сказано в Сантиях Веды Перуна:&nbsp; ".<i>..тяжкие времена принесёт поток Реки Времени на Святую Землю Расы Великой ... И останутся на земле сей лишь Жрецы-Хранители Древнего Знания и Мудрости Потаённой... Ибо используют люди Силу стихий Мидгардъ-Земли и уничтожат малую Луну и Мир свой прекрасный... И повернётся тогда Сварожий Круг (сдвинется земная ось) и ужаснутся людские Души...</i>&raquo;. Это событие было предсказано <a href="#Летоот3гоПрибытияВайтманыПеруна">Перуном во время его 3-го посещения Мидгардъ-Земли</a>.</p>
+<p align="justify">Во времена Великого переселения после гибели Луны Лели Х&lsquo;Арийский Род во главе с Великим Вождем Антом дошел до Западного (Атлантического) океана и с помощью Вайтман переправился на остров в этом океане, на котором жили безбородые люди с кожей цвета пламени Священного Огня (люди с красной кожей). На той земле Великий Вождь построил Капище (храм) Трезубца Бога Морей и Океанов (Бога Ния), который покровительствовал людям, защищая их от Сил Зла. Остров стал называться Землей Антов или Антлань (по древнегречески &ndash; Атлантис, т.е. Атлантида).</p>
+<p align="justify">Однако развитие культуры в Стране Антов зашло в тупик. Часть Антов, нарушив Законы чистоты Рода и Крови, смешалась с краснокожими людьми. Великий достаток отуманил головы вождей и жрецов &mdash; выходцев из смешанных семей. Лень и желание чужого затмили разум их. И начали они лгать Богам и людям, стали жить по своим законам, нарушая Заветы Мудрых Первопредков и Законы Бога-Прародителя Единого. И начали использовать Силу Стихии Мидгард-Земли для достижения своих целей. В битве между людьми Белой Расы и жрецами Антлани, которые экспериментируя с Кристаллами Силы, (с помощью которых можно видоизменять торсионные поля, ядра Лун и Земель) случайно уничтожили Луну Фатту.</p>
+<p align="justify">При уничтожении Фатты громадный осколок врезался в Землю в районе западного материка (Америки), в результате чего изменился наклон земной оси на 36 градусов и материковые очертания. В ряде древних текстов этот процесс описан, как изменение наклона неба по отношению к земле. Например, в древнекитайском трактате "Хуайнаньцзы" это описано так: "Небо накренилось на северо-запад, Солнце, Луна и звёзды переместились". Земная ось приобрела волчкообразное движение по эллипсу, которое современные учёные называют &laquo;периодом прецессии&raquo;. Ярило-Солнце стало проходить через иные Небесные Чертоги на Сварожьем Круге. На стене одной из пирамид Майя в Америке есть надпись "Малая Луна разбилась". В китайском трактате "Хуайнаньцзы" это событие описывается так: "Небесный свод разломился, земные веси оборвались. Небо накренилось на северо-запад. Солнце и звезды переместились. Земля на юго-востоке оказалась неполной, и поэтому воды и ил устремились туда&hellip; В те далекие времена четыре полюса разрушились, девять материков раскололись&hellip; огонь полыхал не утихая, воды бушевали не иссякая".</p>
+<p align="justify">Гигантская волна от падения осколков трижды обошла землю, что привело к гибели Антлани и других островов. Возросшая вулканическая активность привела к загрязнению атмосферы, что явилось одной из причин Великого Похолодания и оледенения. Отсюда и появилось слово "фатальность", "Фатальный исход" и число 13 (число суток обращение Фатты вокруг Мидгарда) считается с тех пор несчастливым. Люди переселялись на юг в более тёплые места обитания, а ледник практически уничтожил все следы проживания на северных широтах. Прошло много столетий, прежде чем стала очищаться атмосфера, и ледники отступили к полюсам.</p>
+<p align="justify">Это событие отбросило Человечество в "каменный век". <a href="ha-tha.php?str=nasledie/ukraine">Далее</a></p>
+<p align="justify"><b><a name="Летоот3гоПрибытияВайтманыПеруна"></a>Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+T_P_V_P = S_M_Z_H + 32496; document.write(T_P_V_P);
+// ]]></script>
+от 3-го Прибытия Вайтманы Перуна</b></p>
+<p align="justify" style="text-align: center;"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/orel.jpg" class="img-rounded" /></p>
+<p align="justify">Чуть более 40 тыс. лет назад третий раз один из Вышних Славяно-Арийских Богов Перун спустился на большой Небесной колеснице &ndash; <a href="ha-tha.php?str=vedy/vimany">Вайтмане</a> на Мидгардъ. Он прибыл к нам с Урай-Земли из Чертога Орла. Это событие перешло в национальный <a href="out.php?link=http://ru.wikipedia.org/wiki/Р&curren;Р&deg;Р№Р&raquo;:Mexico_COA_large.svg">символ Мексики</a>: орёл поедает змею ‒ образ из пророчества, гласившего, что именно в таком месте должно основать новый дом. Как раз в 2012 году заканчивается их <span class="searchlite">календарь</span> и должна прилететь вайтмара, по их пророчествам. И произойдёт победа Света над тьмой (орёл победит змею). Также легенда ацтеков гласит, что их предки&nbsp; пришли с севера, из места, называемого Ацтлан (т.е. Атлань, Атлантида) и вёл их бог Уицилопочтли (что означает &laquo;колибри левой стороны&raquo;, &laquo;колибри-левша&raquo;). <br /> <br /> <a href="ha-tha.php?str=vedy/vimany">Вайтмана</a> Перуна приземлилась в районе Асгарда (Города Богов) в Беловодье Сибирском.&nbsp;В течение 9 дней Жрецы и Вои Свята Расы общались с Перуном. Он поведал им Мудрость из Мира Прави, которая была записана волхвами в сантиях (золотых пластинах) Перуна.&nbsp; (Боги обитают в многомерных Мирах Прави. Мир Истины, например, имеет&nbsp; 65&nbsp;536 в степени 2048 мерностей пространства. Но, являясь многомерниками, Боги периодически приходят в Мир Яви, ‒&nbsp; в 4-х мерное пространство,&nbsp; в Мир Людей, в привычном для людей облике ‒ человека).</p>
+<p align="justify"><b><a name="ЛетоотСотворенияВеликогКолоРассении"></a>Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+S_V_K_R = S_M_Z_H + 37036; document.write(S_V_K_R);
+// ]]></script>
+от Сотворения Великого Коло Рассении</b></p>
+<p align="justify">Великое коло, т.е. Великий круг, т.е. объединение Славяно-Арийских Родов для совместного проживания. Т.е. было несколько этапов заселения Мидгарда. Первый этап, заселена была <a href="#ЛетоотВеликогоПереселенияизДаарии">Даария</a>. Потом во времена Великой Асы переселились "дети Арея" с Земли Ария (Марс). Были и переселения с Индгарда. И т.д. И 
+селились в разных местах, но это всё одна <a href="slovar.php?bukva=r#РАСА">РАСА</a>, а Расcения ‒ земля, по которой они расселились. Старших Родов собрались и сотворили Великий круг, чтобы жить и вместе созидать.</p>
+<p align="justify"><b><a name="ЛетоотОснованияАсгардаИрийского"></a>Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+O_A_I = S_M_Z_H + 99270; document.write(O_A_I);
+// ]]></script>
+от Основания Асгарда Ирийского (от 9 Тайлетъ)</b></p>
+<p align="justify">На древлесловенском языке Асъ ‒ это Бог, воплощённый в человеческом теле. Наши Предки называли себя Асами, страна их именовалась Асия (об этом упоминает и Древнескандинавский эпос ‒ &laquo;Сага об Инглингах&raquo;). Асгардъ ‒ означает &laquo;Город Богов&raquo;. Ирийский ‒ потому что стоит на реке Ирий Тишайший (сокращённо Иртиш, или Иртыш).&nbsp; Всего Асгардов было четыре. Асгардъ Даарийский, находившийся на северном полюсе, погиб (затонул) вместе с гибелью Северного материка ‒ <a href="#ЛетоотВеликогоПереселенияизДаарии">Даарии</a>. Позже были построены Асгардъ Сагдийский (район нынешнего Ашхабада) и Асгардъ Свинтьодский (город Уппсала, Норвегия).&nbsp; Руины Древнего Асгарда Ирийского, разрушенного полчищами джунгар в 1530 году н.э., обнаружил картограф Петра 1-го Ремизов, после чего на этом месте была построена Омская крепость (ныне город Омск).</p>
+<p align="justify"><b><a name="ЛетоотВеликогоПереселенияизДаарии"></a>Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+V_P_D = S_M_Z_H + 104298; document.write(V_P_D);
+// ]]></script>
+от Великого Переселения из Даарии</b></p>
+<p align="justify" style="text-align: center;"><a href="http://energodar.net/modules/blog/ha-tha/vedy/img/daariya.jpg" rel="lightbox"><img src="http://energodar.net/modules/blog/ha-tha/vedy/img/daariya_.jpg" class="img-rounded" /></a></p>
+<p align="justify">Даария ‒ континент на Северном полюсе Мидгардъ-Земли, где долгое время жили наши Предки после заселения Мидгардъ-Земли. Этот материк затонул в результате потопа, сотворённого водами и осколками <a href="ha-tha.php?str=vedy/lelya">разрушенной малой Луны Лели</a>. Об этом также говорят Сантии Веды Перуна: ".<i>.. Эти Кащеи, правители Серых, сгинули вместе с Луной в получасьи ... Но расплатился Мидгардъ за свободу Даарией, скрытой Великим Потопом... Воды Луны тот Потоп сотворили, на Землю с Небес они радугой пали, ибо Луна раскололась на части и ратью Сварожичей в Мидгардъ спустилась...</i>". Изображение очертаний континента Даария сохранилось на стене одной из пирамид в Гизе. В 1595 году эта карта была опубликована Рудольфом &ndash; сыном Герарда Меркатора. Гибель материка и катастрофа были предсказаны волхвом по имени Спас, поэтому славяно-арийские народы начали переселяться по перешейку, образованному Рипейскими Горами (Урал) в район острова Буян (Западно-Сибирская возвышенность). После 16-тилетнего перехода из Даарии в Рассению и последовавшего вслед потопа был основан праздник ПАСХЕТЬ (аббревиатура букв &ndash; Путём Асы Ходяше Этим). Возникшая традиция красить и бить друг об друга яйца символизировали: &nbsp;разбитое яйцо &ndash; символ погибшей Луны Лели, а целое яйцо &ndash; Тарха (Даждьбога), который уничтожил Луну вместе с находившимися на ней Кащеями, замышлявшими уничтожить Мидгардъ. <a href="ha-tha.php?str=nasledie/daariya">Подробнее</a>.</p>
+<p align="justify"><b><a name="ЛетоотпериодаТрехЛун"></a>Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+P_T_L = S_M_Z_H + 135482; document.write(P_T_L);
+// ]]></script>
+от периода Трех Лун</b></p>
+<p align="justify">Это Период, когда вокруг Мидгард-Земли вращалось три Луны: Леля, Фатта и Месяц. Леля &ndash; малая Луна с периодом обращения 7 суток, Фатта &ndash; средняя Луна с периодом обращения 13 суток и Месяц &ndash; большая Луна с периодом 29,5 суток. Две из этих Лун &ndash; Леля и Месяц были изначально Лунами Мидгардъ-Земли, а Фатту перетащили от Земли Деи.<br /> <br /> Подтверждение о тех временах есть в мифах и легендах различных народов.</p>
+<p align="justify"><b><a name="ЛетоотАссаДеи"></a>Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+A_D = S_M_Z_H + 145858; document.write(A_D);
+// ]]></script>
+от Асса Деи</b></p>
+<p align="justify">Асса &ndash;&nbsp; Битва Богов. Указанный в летоисчислении срок&nbsp; отделяет нас от войны, происходившей во Сварге не только в Мире Яви, но и в многомерных Мирах Слави и Прави. В той битве участвовали не только люди, но и Леги, Арлеги, Боги. В Мире людей против славян и арийцев воевали серые (Кащеи), и на их стороне &ndash; чернокожие (люди с кожей цвета мрака). До того, как заселить на Мидгард-Землю Роды Свята Раса сперва заселили Землю Сварога (Дея), затем переселились на Землю Ория (Марс). Все в Мире идет по соответствующей спирали развития и скручивания. Потомкам Рода Небесного на протяжении многих сот тысячелетий приходилось вести Великую Асу (битву) с Силами Мира Тьмы, которые несли дисгармонию в жизнь наших пращуров, лестью и кривдой пытались проникнуть на Мидгард-Землю, как до этого проникли на Луну Лютицию Земли Сварога (Деи) и оттуда атаковали Дею. Но жрецы с помощью силы кристаллов успели перенести Дею в иномирье. При этом во время схлопывания временных структур удар, летевший к Деи, отразился и разорвал Луну Лютицию. На этом месте сейчас пояс астероидов, вращающийся по 5-й орбите после Земли Орея (Марса). Вторая Луна Деи &ndash; Фатта (Фаэтон) уцелела. В результате мощного взрыва была снесена часть атмосферы с населённой тогда Земли Орея, после чего славяно-арийские рода покинули её, часть из них переселилась на Мидгардъ (так называемые Дети Орея). После окончания Асса Деи многие люди с кожей цвета мрака, оставшиеся без своей Земли,&nbsp; находясь на звездолётах в космосе, попросили пощады и разрешения приземлиться на Мидгардъ. Наши Предки разрешили и выделили им земли, по климату схожие с их родиной,&nbsp; а для адаптации к излучениям Мидгардъ-Земли перетащили Луну Фатту с &nbsp;5-й орбиты и запустили вокруг Мидгарда с периодом 13 суток.</p>
+<p align="justify"><b><a name="ЛетоотВремениТары"></a>Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+V_TA = S_M_Z_H + 157522; document.write(V_TA);
+// ]]></script>
+от Времени Тары</b></p>
+<p align="justify">Берёт своё начало от времени, когда Мидгардъ-Землю посещала Богиня Тара. Она привезла с собой семена Священных Деревьев и помимо той, будем говорить, флоры, которая была, она ещё и насадила лесов. Поэтому и до сих пор Тару считают покровительницей деревьев, дающих силу. Полярная звезда у Славяно-Ариев до сего времени именуется Тара, в честь прекрасной Богини Тары.</p>
+<p align="justify">На Мидгард-Землю также прибывал Даждьбог &ndash; Бог Тарх Перунович, сын Бога Перуна. Бог хранитель древней Великой Мудрости, который дал потомкам Рода Небесного девять Саньтий (Свещенных Книг). Эти Саньтии были записаны древними Рунами и содержали Священные Древние Веды, Заповеди Тарха Перуновича и его наставления. Саньтии ‒ это пластины из благородного металла, на которых начертаны Древние х&rsquo;Арийские руны. Пластины скреплены тремя кольцами, которые символизируют три Мира: Явь (Мир Людей), Навь (Мир Духов и Душ Предков), Правь (Светлый Мир Славяно-Арийских Богов, который Славяне-Арии правьславляют, потому суть Православные).&nbsp; Все жители в различных Мирах (в Галактиках, Звездных Системах)&nbsp; и на Землях, где проживают представители наших Древних Родов, живут согласно Древней Мудрости, Родовыми Устоями и Правилами, которых придерживаются Рода. Тара ‒ младшая сестренка <a name="детиТархаиТары"></a>Тарха. <a href="ha-tha.php?str=vedy/nasledie/tartariya">Тархтария</a> (Тартария, Татария) ‒ территории от Урала до Тихого океана и от Студенного Океана до Центральной Индии, которым покровительствуют Боги Тарх и Тара, дети Бога Перуна. Наши Предки говорили иноземцам: "&hellip;мы <a name="детиТархаиТары"></a>дети Тарха и Тары&hellip;". Позднее Та<b>рх</b>тария стала Та<b>р</b>тарией, а библейский народ, с трудом выговаривающими букву "р", называл её Татарией.</p>
+<p align="justify"><b><a name="ЛетоотВремениТуле"></a>Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+V_TU = S_M_Z_H + 178258; document.write(V_TU);
+// ]]></script>
+от Времени Туле</b></p>
+<p align="justify">Прибытие Расенов и заселения провинции Туле (Тул ‒ огонь) в Даарии. Дария была разделена четырьмя реками, и было 4 провинции: Свага, Харра, Рае (?) и Туле, где был и город Туле, город мастеров, снабжавших всех всеми необходимыми инструментами, механизмами и пр. Т.е. там, как предания гласят, изготавливались инструменты, способные, не нанося вред окружающей природе изменять мир, такие как магические кристаллы и пр. Поэтому и мистический орден в Германии был назван ‒ Туле, т.е. как бы прообраз того великолепия, благоденствия, который был в Северной Даарии.</p>
+<p align="justify">Этот славянский Род Туле прибыл из Системы Солнца Даждьбога (Златое) с Земли Ингардъ, годовой период его вращения составляет 576 суток, и называли себя внуками Даждьбожьими. Данное Солнце&nbsp; находится в Чертоге Раса ‒ Белого Леопарда или Пардуса. Рост их был от 175 см до 285 см. Глаза карие (огненные, отсюда и Тул ‒ огонь) и светло-карие (жёлтые). Волосы темно-русые. Рассенов называют еще Росы. К ним относятся народы: Западные Росы, Рысичи (глаза как у Рыси), Италийцы, Этруски (этнос русский), Дакийцы (Дакки или Молдаване), Самарийцы, Полезги, Сирийцы, Фракийцы, Франки, Готты, Албанцы, Аварцы и т.д.</p>
+<p align="justify"><b><a name="ЛетоотВремениСвага"></a>Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+document.write(V_SVA);
+// ]]></script>
+от Времени Свага</b></p>
+<p align="justify">Прибытие Святорусов из чертога Лебедя (Большой Медведицы) и заселения провинции Свага в Даарии. Они называли они себя Сва-Га (сва ‒ сияние, га ‒ продвижение) ‒ это были голубоглазые Славяне. Рост 175 см до 300 см (не высокие в сравнении с арийскими Родами). Группа крови 1 и 2. Волосы от белого до светло-русого. Цвет глаз от небесного до синего. К этому роду относятся народы: Северные Русские, Белорусы, Борусы (Божественные Русы из Земли Боруссия в ФРГ), Червоны-Русы (в Польше), Поляне, Восточные Пруссы, Серебренные Русы (Сербы),&nbsp; Хорваты, Ирландцы, Скотты, Ассирийцы (Ассы с Ирия), Македонцы и т.д. Их прародина Земля-Рута в Чертоге Лебедя системы Солнца-Аркольны.</p>
+<p align="justify"><b><a name="ЛетоотВременихАрра"></a>Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+document.write(V_XA);
+// ]]></script>
+от Времени х&rsquo;Арра</b></p>
+<p align="justify">Прибытие х`Арийцев из Чертога Финиста Ясного Сокола (Ророга) или по-современному ‒ созвездия Орион. Этот арийский род&nbsp; Святы Расы выглядел так: ирис глаз зеленый по цвету их Солнца-Рады, кровь 1 гр., редко 2 гр. Рост от 180 до 360 см. Волосы русые и светло-русые. К ним относятся: Восточные Русы, Северо-восточные&nbsp; Прусы (Поморские Русы), Скандинавы (Суоми, Свеи, Родеи), Англосаксы, Норманны (Мурманы), Галлы, Исландцы (Беловодские Русичи), Народ Святые Рысичи.</p>
+<p align="justify"><b><a name="ЛетоотВремениДары"></a>Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+document.write(V_DA);
+// ]]></script>
+от Времени Дары</b></p>
+<p align="justify">Прибытие Да`Арийцев на <a href="ha-tha.php?str=vedy/vimanika">Вайтмарах</a>&nbsp; (небесных колесницах) на Мидгард из Звездной Системы Зимун ‒ Небесной Коровы (Малая Медведица), их Солнце Тара (Полярная Звезда) ‒ ирис цвета глаз сереброглазый, цвет волос светло-русый и почти белесый, 1 группа крови, рост от 175см до 390см. К ним относятся: Сибирские Русичи (табольские татары), Северо-западные&nbsp; германцы, Расичи (Югорские и Лукоморские), Датчане, Голландцы, Фламандцы, Лачаллы, Латыши (Латы), Ривы (Литовцы и Литоване), Эсты и т.д.</p>
+<p align="justify">Два арийских рода (Да`Арийцы и х`Арийцы), ранее,&nbsp; встречались с представителями Пекельного мира и имели на генетическом уровне определенные о них представления, а также практический опыт по ведению против них войны (имелась информационная генетическая прививка от зла). Славянские рода (Святорусы и Расены), до прибытия на Мидгард, не имели с силами Пекла ни каких дел и соответствующего практического опыта в борьбе с несовершенством, поэтому не имели должного представления о зле. И до сего времени многие&nbsp; из нашего народа находятся в галактической спячке, надеются и тупо верят в &laquo;наше&raquo; руководство, которое в основном состоит из сил Пекла. &laquo;Защищайте Роды Рассенов и Святорусов от Чужеземных ворогов, что идут в земли ваши со злым помыслом и с оружием&raquo; ‒ Бог Перун.</p>
+<p align="justify"><b><a name="ЛетоотВремениТрехСолнц"></a>Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+document.write(V_T_S);
+// ]]></script>
+от Времени Трех Солнц</b></p>
+<p align="justify">Это один из самых Древних Славяно-Арийских Календарей Мидгардъ-Земли. Он упоминает о событиях более 600&nbsp;000 - летней давности, когда вследствие вращения вокруг центра нашей галактики произошло сближение нашей солнечной системы с двумя другими солнечными системами. В результате сближения на небосклоне можно было наблюдать ещё два Солнца-гиганта серебристого и зелёного цвета, смотря на которые с Мидгардъ-Земли они были равны по величине с видимым диском нашего Ярило-Солнца.</p>
+<p align="justify"><b><a name="ЛетоотВремениотвременипоявленияБогов"></a>Лѣто
+<script language="JavaScript1.1" type="text/javascript">// <![CDATA[
+document.write(TRI_SUN);
+// ]]></script>
+от Времени появления Богов</b></p>
+<p align="justify"><b><a name="ЛетоотприбытиянаМидгард"></a>Лѣто ~1, 5 миллиардное&nbsp; от прибытия на Мидгард первой вайтмары Великой Расы Рода небесного</b></p>
+<p align="justify">Около 1,5 миллиардов лет была осуществлена вынужденная посадка на Мидгард из-за поломки "небесной колесницы". Потом наши Предки заселили <a href="#ЛетоотВеликогоПереселенияизДаарии">Даарию</a> (Дар Ариям ‒ Богами), прибывая с Земель, находящихся в созвездиях Малой и Большой Медведиц, Льва, Лебедя и Кассиопеи. Они отличаются друг от друга цветом радужной оболочки глаз, который зависит от спектра света их родных солнц: сереброглазые (сероглазые) ‒ Да&rsquo;Арийцы, зеленоглазые &ndash; Х&rsquo;Арийцы, синеглазые ‒ Светорусы, огненноглазые (к&rsquo;Ариглазые) &ndash; Рассены. Да&rsquo;Арийцы имеют качества предводителей-воинов. Х&rsquo;Арийцы имеют качества ведунов-свещеннослужителей.&nbsp; Светорусы имеют качества ремесленников и изобретателей. Расены очень общительны и контактны.</p>
+<p align="justify">Приземлились наши Предки в 18:00 (19:00) часов (современных часов или 15:144.1024 по старому) на <b>Мидгард-Землю</b> на континент <a href="#ЛетоотВеликогоПереселенияизДаарии">Даария</a>, находящийся на Русском Севере (Се Вера) (Русский Север ‒ Северный полюс). Вот и выбрали это время для отсчёта, тем более тогда всегда был день и не наступала ночь, т.к. на Северном полюсе Ярило-Солнце светило постоянно, был вечный день, о чём сказано в Сказах (том 4-ый Славяно-Арийских Вед) о том, что Ярило-Солнце не желало заходить на покой, чтобы постоянно наблюдать благие дела Расичей. Наши Предки пронесли Традицию через Круги Времён в изначальном варианте.</p>
+<p align="justify">То, что мы "инопланетяне" говорит крепость наших костей, которая равно 0.8, тогда как почти у всех животных от 1.0 до 1.2, кроме тех, которых завезли на Мидгард, например кошек. Ребёнок кричит при рождений потому что, давление выше, чем на галактической прародине, из-за чего ребёнку надо больше времени, чтоб адаптироваться к такому давлению и научится держать голову, ползать, ходить. Хотя местные жители в первые часы, т.е. почти сразу начинают вставать и передвигаться на своих конечностях. По этому, Предки всегда рожали в воду, чтоб ребёнку было легче адаптироваться в новом мире.<br /> Если человека заточить в темном пространстве, то он перейдёт на 36 и 48 часовые режимы вместо 24-го, а вот местные животные не изменяют свой привычный 24 часовой режим.</p>
+<p align="justify"><b>Лѣто ~1,96 миллиардное от сотворения нашей Солнечной системы</b>.</p>
+<table cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td background="../img/usor.gif" height="15"><span size="1" face="Arial" style="font-family: Arial; font-size: xx-small;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p align="left"><b>Сноски:</b></p>
+<p align="justify">1. <b><a name="Ъ"></a>Ъ</b> ‒ буквица Еръ, звучит как О-краткое, образный смысл "Сотваряше", т.е. сотворение (идёт действие, процесс творения).<br /> 2. <b><span palatino="" linotype=""><a name="ие"></a>Ѣ</span></b> ‒ буквица Ять, звучит как "ие", образный смысл "Истинно Есть".</p>
+<table cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td background="../img/usor.gif" height="15"><span size="1" face="Arial" style="font-family: Arial; font-size: xx-small;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p><b>Источники:</b><br /> <br /> <a name="1"></a>1. Время и календарь, Хренов Леонид Сергеевич, Голуб Иосиф Яковлевич. Москва &laquo;Наука&raquo;, 1989 год, тираж 250000 экземпляров, страницы 85 - 87.<br /> 2. "Славяно-Арiискiя Вѣды", кънига 2 (Кънига Свѣта), приложение 3: Даарiискiи Круголѣтъ Числобога<br /> 3. <a href="out.php?link=http://mid-gard.info">mid-gard.info</a><br /> 4. <a href="out.php?link=http://vo-lad-i-mir.narod.ru">vo-lad-i-mir.narod.ru/</a><br /> 5. <a href="out.php?link=http://old-church.ru/forum/">old-church.ru/forum/</a><br /> 6. <a href="out.php?link=http://www.slavianin.ru">www.slavianin.ru</a><br /> 7. <a href="ha-tha.php?str=uroki/index">уроки АДУ</a></p><hr>
+			<div class="pull-left">
+				<!-- Соц кнопки от Яндекса -->
+				<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus" data-counter=""></div>
+			</div>
+			<div class="pull-right" align="right">
+
+			</div>
+			<div class="clearfix"></div><hr><div id="VOuDuZDc" align="center"></div>
+			<script type="text/javascript">// <![CDATA[
+				var idp = "730";
+				var link_bg='#fff'; //цвет фона
+				var link_c ='#000'; //цвет ссылки
+				var link_s ='12px'; //размер ссылки
+				var link_w ='normal'; //толщина ссылки
+				var idp_horizontal_container = "VOuDuZDc"; //id контейнера отображения
+			// ]]></script>
+			<script type="text/javascript" src="http://www.oberegi-runi.ru/assets/templates/html/horizontal/limit-6/"></script>
+			<p align="center"><a href="out.php?go=http://www.oberegi-runi.ru/catalog/idp-730/" target="_blank">Руническая мастерская. Посмотреть весь каталог</a></p><hr></sape_index><!--c984053267916--></div>﻿<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+					</div>
+	</div>
+</div><div id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 text-muted">2004 - 2020 &copy;<span class="hidden-xs"> <a href="http://energodar.net" style="text-decoration: none"><font color="#aaa">Энергодар.нет</a></span></div>
+			<div class="col-md-6 text-muted">
+<!-- Счётчик http://www.liveinternet.ru -->
+<script type="text/javascript">
+<!--
+document.write("<img src='//counter.yadro.ru/hit?t23.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='15' align='right'>")
+//-->
+</script>
+			</div>
+	</div>
+</div>
+<!-- Bootstrap core JavaScript -->
+<!-- внизу, чтоб страница быстрей загружалась -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://energodar.net/templates/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- для lightbox v2 -->
+<script type="text/javascript" src="http://energodar.net/templates/lightbox2/js/lightbox.js"></script>
+
+
+<!-- Gismeteo (скрипт)-->
+<!-- <script src="https://www.gismeteo.ua/ajax/getInformer/?hash=cO2naHVsMc5FG6" type="text/javascript"></script> -->
+<!-- Gismeteo END -->
+
+<!-- Соц кнопки от Яндекса -->
+<!-- <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script> -->
+<!-- <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script> -->
+
+</body>
+</html>

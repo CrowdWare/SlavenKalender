@@ -1,0 +1,216 @@
+<script>
+
+ var AryanNames = {
+    element: [ 'Ð—ÐµÐ¼Ð»Ñ', 'Ð—Ð²ÐµÐ·Ð´Ð°', 'ÐžÐ³Ð¾Ð½ÑŒ', 'Ð¡Ð¾Ð»Ð½Ñ†Ðµ', 'Ð”ÐµÑ€ÐµÐ²Ð¾', 'Ð¡Ð²Ð°Ð³Ð°', 'ÐžÐºÐµÐ°Ð½', 'Ð›ÑƒÐ½Ð°', 'Ð‘Ð¾Ð³' ],
+    color: [ 'Ð§Ñ‘Ñ€Ð½Ñ‹Ð¹', 'ÐšÑ€Ð°ÑÐ½Ñ‹Ð¹	ÐÐ»Ñ‹Ð¹', 'Ð—Ð»Ð°Ñ‚Ñ‹Ð¹', 'Ð—ÐµÐ»ÐµÐ½ÑŒ', 'ÐÐµÐ±ÐµÑÐ½Ñ‹Ð¹', 'Ð¡Ð¸Ð½Ð¸Ð¹', 'Ð¤Ð¸Ð¾Ð›Ñ£Ñ‚Ð¾Ð²Ñ‹Ð¹', 'Ð‘ÐµÐ»Ñ‹Ð¹' ],
+    kruglet: [ 'ÐŸÑƒÑ‚ÑŒ (ÑÑ‚Ñ€Ð°Ð½Ð½Ð¸Ðº)', 'Ð–Ñ€ÐµÑ†', 'Ð–Ñ€Ð¸Ñ†Ð°', 'ÐœiÑ€ (Ð¯Ð²ÑŒ)', 'Ð¡Ð²Ð¸Ñ‚Ð¾Ðº', 'Ð¤ÐµÐ½Ð¸ÐºÑ', 'Ð›Ð¸Ñ (ÐÐ°Ð²ÑŒ)', 'Ð”Ñ€Ð°ÐºÐ¾Ð½', 'Ð—Ð¼ÐµÐ¹', 'ÐžÑ€Ñ‘Ð»', 'Ð”ÐµÐ»ÑŒÑ„Ð¸Ð½', 'ÐšÐ¾Ð½ÑŒ', 'ÐŸÑ‘Ñ', 'Ð¢ÑƒÑ€ (Ð±Ñ‹Ðº)', 'Ð¥Ð¾Ñ€Ð¾Ð¼Ñ‹ (Ð´Ð¾Ð¼)', 'ÐšÐ°Ð¿Ð¸Ñ‰Ðµ (Ñ…Ñ€Ð°Ð¼)' ],
+    gender: [ 'ÐœÑƒÐ¶ÑÐºÐ¾Ð¹', 'Ð–ÐµÐ½ÑÐºÐ¸Ð¹' ],
+    week: [ 'ÐŸÐ¾Ð½ÐµÐ´ÐµÐ»ÑŒÐ½Ð¸ÐºÑŠ', 'Ð’Ñ‚Ð¾Ñ€Ð½Ð¸ÐºÑŠ', 'Ð¢Ñ€Ð¸Ñ‚ÐµÐ¹Ð½Ð¸ÐºÑŠ', 'Ð§ÐµÑ‚Ð²ÐµÑ€Ð¸ÐºÑŠ', 'ÐŸÑÑ‚Ð½Ð¸Ñ†Ð°', 'Ð¨ÐµÑÑ‚Ð¸Ñ†Ð°', 'Ð¡ÐµÐ´ÑŒÐ¼Ð¸Ñ†Ð°', 'ÐžÑÑŒÐ¼Ð¸Ñ†Ð°', 'ÐÐµÐ´ÐµÐ»Ñ' ],
+    months: [ 'Ð Ð°Ð¼Ñ…Ð°Ñ‚ÑŠ', 'ÐÐ¹Ð»ÐµÑ‚ÑŠ', 'Ð‘ÐµÐ¹Ð»ÐµÑ‚ÑŠ', 'Ð“ÑÐ¹Ð»ÐµÑ‚ÑŠ', 'Ð”Ð°Ð¹Ð»ÐµÑ‚ÑŠ', 'Ð­Ð»ÐµÑ‚ÑŠ', 'Ð’ÑÐ¹Ð»ÐµÑ‚ÑŠ', 'Ð¥ÐµÐ¹Ð»ÐµÑ‚ÑŠ', 'Ð¢Ð°Ð¹Ð»ÐµÑ‚ÑŠ' ],
+    monthDescriptions: [ 'Ð‘Ð¾Ð¶ÐµÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ð³Ð¾ ÐÐ°Ñ‡Ð°Ð»Ð°', 'ÐÐ¾Ð²Ñ‹Ñ… Ð”Ð°Ñ€Ð¾Ð²', 'Ð‘ÐµÐ»Ð¾Ð³Ð¾ Ð¡Ð¸ÑÐ½Ð¸Ñ Ð¸ ÐŸÐ¾ÐºÐ¾Ñ ÐœÐ¸Ñ€Ð°', 'Ð’ÑŒÑŽÐ³ Ð¸ Ð¡Ñ‚ÑƒÐ¶Ð¸', 'ÐŸÑ€Ð¾Ð±ÑƒÐ¶Ð´ÐµÐ½Ð¸Ñ ÐŸÑ€Ð¸Ñ€Ð¾Ð´Ñ‹', 'ÐŸÐ¾ÑÐµÐ²Ð° Ð¸ ÐÐ°Ñ€ÐµÑ‡ÐµÐ½Ð¸Ñ', 'Ð’ÐµÑ‚Ñ€Ð¾Ð²', 'ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ñ Ð”Ð°Ñ€Ð¾Ð² ÐŸÑ€Ð¸Ñ€Ð¾Ð´Ñ‹', 'Ð—Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¸Ñ' ]
+};
+
+var AryanDate = ( function() {
+
+    var monthsByLeto = [
+        // 1, 2, 3
+        null, null,
+        [ date( 23, 9 ), date( 3, 11 ), date( 13, 12 ), date( 23, 1 ), date( 4, 3 ), date( 14, 4 ), date( 24, 5 ), date( 4, 7 ), date( 13, 8 ) ],
+        // 4
+        [ date( 23, 9 ), date( 3, 11 ), date( 13, 12 ), date( 23, 1 ), date( 3, 3 ), date( 13, 4 ), date( 23, 5 ), date( 3, 7 ), date( 12, 8 ) ],
+        // 5, 6, 7
+        null, null,
+        [ date( 22, 9 ), date( 2, 11 ), date( 12, 12 ), date( 22, 1 ), date( 3, 3 ), date( 13, 4 ), date( 23, 5 ), date( 3, 7 ), date( 12, 8 ) ],
+        // 8
+        [ date( 22, 9 ), date( 2, 11 ), date( 12, 12 ), date( 22, 1 ), date( 2, 3 ), date( 12, 4 ), date( 22, 5 ), date( 2, 7 ), date( 11, 8 ) ],
+        // 9, 10, 11
+        null, null,
+        [ date( 21, 9 ), date( 1, 11 ), date( 11, 12 ), date( 21, 1 ), date( 2, 3 ), date( 12, 4 ), date( 22, 5 ), date( 2, 7 ), date( 11, 8 ) ],
+        // 12
+        [ date( 21, 9 ), date( 1, 11 ), date( 11, 12 ), date( 21, 1 ), date( 1, 3 ), date( 11, 4 ), date( 21, 5 ), date( 1, 7 ), date( 10, 8 ) ],
+        // 13, 14, 15
+        null, null,
+        [ date( 20, 9 ), date( 31, 10 ), date( 10, 12 ), date( 20, 1 ), date( 1, 3 ), date( 11, 4 ), date( 21, 5 ), date( 1, 7 ), date( 10, 8 ) ],
+        // 16
+        [ date( 20, 9 ), date( 31, 10 ), date( 11, 12 ), date( 21, 1 ), date( 2, 3 ), date( 12, 4 ), date( 23, 5 ), date( 3, 7 ), date( 13, 8 ) ]
+    ];
+
+    var weekdaysByLeto = [
+        [ 1, 10, 20, 29, 39, 48, 49, 58, 68, 77, 87, 96, 106, 116, 125, 135, 144 ],
+        [ 3, 12, 22, 31, 41, 51, 60, 70, 79, 89, 99, 108, 118, 127, 137 ],
+        [ 5, 14, 24, 34, 43, 53, 62, 72, 82, 91, 97, 101, 110, 120, 130, 139 ],
+        [ 7, 16, 17, 26, 36, 45, 55, 64, 65, 74, 84, 93, 103, 112, 113, 122, 132, 141 ],
+        [ 9, 19, 28, 38, 47, 57, 67, 76, 86, 95, 105, 115, 124, 134, 143 ],
+        [ 2, 11, 21, 30, 40, 50, 59, 69, 78, 88, 98, 107, 117, 126, 136 ],
+        [ 4, 13, 23, 32, 33, 42, 52, 61, 71, 80, 81, 90, 100, 109, 119, 128, 129, 138 ],
+        [ 6, 15, 25, 35, 44, 54, 63, 73, 83, 92, 102, 111, 121, 131, 140 ],
+        [ 8, 18, 27, 37, 46, 56, 66, 75, 85, 94, 104, 114, 123, 133, 142 ]
+    ];
+
+    var weekdaysOddEven = {
+        1: 6, 6: 2, 2: 7, 7: 3, 3: 8, 8: 4, 4: 9, 9: 5, 5: 1
+    };
+
+    var weekdaysBySaintMonth = [
+        { 1: 1, 4: 4, 7: 7 },
+        { 1: 6, 4: 9, 7: 3 },
+        { 1: 2, 4: 5, 7: 8 },
+        { 1: 7, 4: 1, 7: 4 },
+        { 1: 3, 4: 6, 7: 9 },
+        { 1: 8, 4: 2, 7: 5 },
+        { 1: 4, 4: 7, 7: 1 },
+        { 1: 9, 4: 3, 7: 6 },
+        { 1: 5, 4: 8, 7: 2 }
+    ];
+
+
+    function convert( gregorian ) {
+        var
+            seeking_date = date( gregorian.getDate(), gregorian.getMonth() + 1 ),
+
+            __leto = ( gregorian.getFullYear() + 5508 - 7376 ) % 16 || 16,
+            equinox_offset = Math.ceil(( __leto + 1 ) / 4 ) % 4 || 4,
+            equinox_date = date( 24 - equinox_offset, 9 ),
+            is_shifted = seeking_date >= equinox_date,
+
+            smzh = gregorian.getFullYear() + 5508 + ( is_shifted ? 1 : 0 ),
+            live = ( smzh - 7376 ) % 144 || 144,
+            leto = live % 16 || 16,
+            sign = live % 18 || 18,
+           gender = sign % 2,
+
+            months = monthsByLeto[ leto - 1 ] || monthsByLeto[ leto ] || monthsByLeto[ leto + 1 ],
+            month = months.reduce( function( prev, curr, i ) {
+                return ( dateRange( months[ i ], seeking_date ) <= 41 ) ? i : prev;
+            }, null ),
+
+            begin_date = months[ month ],
+            day = dateRange( begin_date, seeking_date ),
+
+            weekday_year = 1 + weekdaysByLeto.reduce( function( prev, letos, i ) {
+                return ( null !== prev ) ? prev : ( letos.indexOf( live ) >= 0 ) ? i : null;
+            }, null ),
+              weekday_month = ( leto != 16 )
+               
+                ? (( month + 1 )% 2 ? weekday_year : weekdaysOddEven[ weekday_year ])
+               
+                : weekdaysBySaintMonth[ month ][ weekday_year ],
+           
+            weekday = ( weekday_month + day - 1 ) % 9 || 9;
+
+
+        return {
+            smzh: smzh,
+            live: live,
+            leto: leto,
+            sign: sign,
+            gender: gender,
+            month: month + 1,
+            day: day,
+            weekday: weekday
+
+        };
+    }
+
+    function date( day, month, year ) {
+        if ( 1 == arguments.length )
+            month = day, day = null;
+        return new Date( year || 0, month && month - 1 || 0, day || 1 );
+    }
+
+    function dateRange( date1, date2 ) {
+        var one_day = ( 1000 * 60 * 60 * 24 );
+        if ( date2 < date1 ) {
+             date2 = new Date( date2 );
+            date2.setFullYear( date2.getFullYear() + 1 );
+        }
+        return Math.ceil(( date2 - date1 ) / one_day ) + 1;
+    }
+
+
+    Array.prototype.reduce||(Array.prototype.reduce=function(r){"use strict";if(null==this)throw new TypeError("Array.prototype.reduce called on null or undefined");
+    if("function"!=typeof r)throw new TypeError(r+" is not a function");var e,t=Object(this),n=t.length>>>0,o=0;if(2==arguments.length)e=arguments[1];
+    else{for(;n>o&&!o in t;)o++;if(o>=n)throw new TypeError("Reduce of empty array with no initial value");e=t[o++]}for(;n>o;o++)o in t&&(e=r(e,t[o],o,t));return e});
+
+    return convert;
+
+}());
+
+
+
+function calculateAryanDate( form_id, output_id ){
+    var
+        
+        form = document.getElementById( form_id ),
+        output = document.getElementById( output_id ),
+        
+        day = form.day.options[ form.day.options.selectedIndex ].text >> 0 || 1,
+        month = form.month.options[ form.month.options.selectedIndex ].text >> 0 || 1,
+        year = form.year.value >> 0 || 1900,
+        shift = form.shift.options.selectedIndex || 0,
+        shift_text = form.shift.options[ shift ].text || 'Ñ 00:00 Ð´Ð¾ 17:59',
+        date = new Date( year, month - 1, day );
+    var
+        result = null,
+        text = '';
+
+    if ( shift ) date.setDate( day + 1 );
+    result = AryanDate( date );
+
+
+    alert(result.day);
+}
+</script>
+<form method="POST" id="form1">
+<select size="1" name="day">
+<option selected="selected">1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option>
+</select><select size="1" name="month">
+<option selected="selected">1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+</select>
+<input name="year" maxlength="4" value="" size="4" type="text" />
+<select name="shift" size="1">
+<option selected="selected">00:00 - 17:59</option>
+<option>18:00 - 23:59</option>
+</select>
+<input onclick="calculateAryanDate( 'form1', 'form1results' )" type="button" value="Calc" /></form>

@@ -1,5 +1,5 @@
 
-function doOsn_()
+function calc()
 {
 	var ber = new Bereg();
 	ber.name = getBerName(0);
